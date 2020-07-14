@@ -1,0 +1,2916 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SPR.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="M:SPR.WebAPI.Controllers.BaseAgreementController.Post_SearchBaseAgreementManagementList(System.Object)">
+            <summary>
+            获取BaseAgreement列表
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseAgreementController.Post_BaseAgreement_Del(System.String)">
+            <summary>
+            BaseAgreement批量删除方法
+            </summary>
+            <param name="Ids">BaseAgreementID集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseAgreementController.Post_BaseAgreementSave(System.Object)">
+            <summary>
+            保存BaseAgreement
+            </summary>
+            <param name="data">BaseAgreement实体信息 ID=0新增 具体值更新</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseAgreementController.Get_BaseAgreement_Info(System.Int32)">
+            <summary>
+            获取BaseAgreement信息
+            </summary>
+            <param name="ID">BaseAgreement_ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseAgreementController.GetCustomerSpecialAgreementType(System.String)">
+            <summary>
+             获取客户协议类型
+            </summary>
+            <param name="CustomerNO">客户号</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseAutoController.Post_BaseDIBasicInfoList(System.Object)">
+            <summary>
+            获取DI信息
+            </summary>
+            <param name="obj">obj</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseAutoController.Post_BasePABBasicInfoList(System.Object)">
+            <summary>
+            获取盘厂信息
+            </summary>
+            <param name="obj">Org1</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseAutoController.Post_BaseOEMList(System.Object)">
+            <summary>
+            获取OEM信息
+            </summary>
+            <param name="obj">Org1</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseAutoController.Post_BaseRegionCodeList(System.Object)">
+            <summary>
+            获取地区牌照信息
+            </summary>
+            <param name="obj">Org1</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseAutoController.Post_BaseBranchCodeList(System.Object)">
+            <summary>
+            获取产品牌照信息
+            </summary>
+            <param name="obj">Org1</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseBranchController.Post_SearchBaseBranchManagementList(System.Object)">
+            <summary>
+            获取行业列表
+            </summary>
+            <param name="Org1">Org1</param>
+            <param name="Org2">Org2</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseBranchController.Post_BaseBranch_Del(System.String)">
+            <summary>
+            BaseBranch批量删除方法
+            </summary>
+            <param name="Ids">BaseBranchID集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseBranchController.Post_BaseBranchSave(EMSPR.Model.Base_Branch)">
+            <summary>
+            保存BaseBranch
+            </summary>
+            <param name="Branch">BaseBranch实体信息 ID=0新增 具体值更新</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseBranchController.Get_BaseBranch_Info(System.Int32)">
+            <summary>
+            获取行业信息
+            </summary>
+            <param name="ID">BaseBranch_ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseBranchController.Post_BaseBranch_Upload">
+            <summary>
+            导入行业信息Excel
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseCityController.Post_SearchBaseCityOMManagementList(System.Object)">
+            <summary>
+            获取City与OM关系列表
+            </summary>
+            <param name="City_Code">City_Code</param>
+            <param name="Org1">Org1</param>
+            <param name="Org2">Org2</param>
+            <param name="OM">OM</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseCityController.Post_BaseCityOM_Del(System.String)">
+            <summary>
+            BaseCityOM批量删除方法
+            </summary>
+            <param name="Ids">BaseCityOMID集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseCityController.Post_BaseCityOMSave(EMSPR.Model.Base_City_OM)">
+            <summary>
+            保存BaseCityOM
+            </summary>
+            <param name="CityOM">BaseCityOM实体信息 ID=0新增 具体值更新</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseCityController.Get_BaseCityOM_Info(System.Int32)">
+            <summary>
+            获取城市OM信息
+            </summary>
+            <param name="ID">BaseCityOM_ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseCityController.Post_SearchBaseCMManagementList(System.Object)">
+            <summary>
+            获取City与MainOffice关系列表
+            </summary>
+            <param name="City_Code">City_Code</param>
+            <param name="Org1">Org1</param>
+            <param name="Org2">Org2</param>
+            <param name="Main_Office_ID">Main_Office_ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseCityController.Post_BaseCM_Del(System.String)">
+            <summary>
+            BaseCityMainOffice批量删除方法
+            </summary>
+            <param name="Ids">BaseCityMainOfficeID集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseCityController.Post_BaseCMSave(EMSPR.Model.Base_City_Main_Office)">
+            <summary>
+            保存BaseCityMainOffice
+            </summary>
+            <param name="CityMainOffice">BaseCityMainOffice实体信息 ID=0新增 具体值更新</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseCityController.Get_BaseCM_Info(System.Int32)">
+            <summary>
+            获取城市与MainOffice关系信息
+            </summary>
+            <param name="ID">BaseCityMainOffice_ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseCityController.Post_SearchBaseMRManagementList(System.Object)">
+            <summary>
+            获取City与MainOffice关系列表
+            </summary>
+            <param name="Region_ID">Region_ID</param>
+            <param name="Org1">Org1</param>
+            <param name="Org2">Org2</param>
+            <param name="Main_Office_ID">Main_Office_ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseCityController.Post_SearchBaseMRManagementListDG(System.Object)">
+            <summary>
+            获取City与MainOffice关系列表DG
+            </summary>
+            <param name="Region_ID">Region_ID</param>
+            <param name="Org1">Org1</param>
+            <param name="Org2">Org2</param>
+            <param name="Main_Office_ID">Main_Office_ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseCityController.Get_MainOfficeByRegionID(System.String)">
+            <summary>
+            根据Region获取Office
+            </summary>
+            <param name="Region_ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseCityController.Post_BaseMR_Del(System.String)">
+            <summary>
+            BaseMainOfficeRegion批量删除方法
+            </summary>
+            <param name="Ids">BaseMainOfficeRegionID集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseCityController.Post_BaseMR_DelDG(System.String)">
+            <summary>
+            BaseMainOfficeRegion批量删除方法DG
+            </summary>
+            <param name="Ids">BaseMainOfficeRegionID集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseCityController.Post_BaseMRSave(EMSPR.Model.Base_Main_Office_Region)">
+            <summary>
+            保存BaseMainOfficeRegion
+            </summary>
+            <param name="MainOfficeRegion">BaseMainOfficeRegion实体信息 ID=0新增 具体值更新</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseCityController.Post_BaseMRSaveDG(EMSPR.Model.Base_Main_Office_Region_DG)">
+            <summary>
+            保存BaseMainOfficeRegionDG
+            </summary>
+            <param name="MainOfficeRegion">BaseMainOfficeRegion实体信息 ID=0新增 具体值更新</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseCityController.Get_BaseMR_Info(System.Int32)">
+            <summary>
+            获取MainOffice与Region关系信息
+            </summary>
+            <param name="ID">BaseMainOfficeRegion_ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseCityController.Get_BaseMR_InfoDG(System.Int32)">
+            <summary>
+            获取MainOffice与Region关系信息DG
+            </summary>
+            <param name="ID">BaseMainOfficeRegion_ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseEndUserController.Post_SearchBaseEndUserManagementList(System.Object)">
+            <summary>
+            获取BaseEndUser列表
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseEndUserController.Post_BaseEndUser_Del(System.String)">
+            <summary>
+            BaseEndUser批量删除方法
+            </summary>
+            <param name="Ids">BaseEndUserID集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseEndUserController.Post_BaseEndUserSave(EMSPR.Model.Base_End_User)">
+            <summary>
+            保存BaseEndUser
+            </summary>
+            <param name="EndUser">BaseEndUser实体信息 ID=0新增 具体值更新</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseEndUserController.Get_BaseEndUser_Info(System.Int32)">
+            <summary>
+            获取BaseEndUser信息
+            </summary>
+            <param name="ID">BaseEndUser_ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseKeyAccountController.Post_SearchBaseKeyAccountList(System.Object)">
+            <summary>
+            获取大客户列表
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseKeyAccountController.Post_BaseKeyAccount_Del(System.String)">
+            <summary>
+            大客户批量删除方法
+            </summary>
+            <param name="Ids">大客户集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseKeyAccountController.Post_KeyAccountSave(System.Object)">
+            <summary>
+            保存大客户
+            </summary>
+            <param name="data">大客户实体信息 ID=0新增 具体值更新</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseKeyAccountController.Get_BaseKeyAccount_Info(System.Int32)">
+            <summary>
+            获取大客户信息
+            </summary>
+            <param name="ID">大客户ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseKeyAccountController.Post_BaseKeyAccountInfoByName(System.Object)">
+            <summary>
+            根据名称获取大客户信息
+            </summary>
+            <param name="Name">大客户中英文名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseKeyAccountController.Get_BaseKeyAccountInfoByNumber(System.String)">
+            <summary>
+            根据大客户编号获取大客户信息
+            </summary>
+            <param name="Number">大客户编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseKeyAccountController.Post_SearchKeyAccountList(System.Object)">
+            <summary>
+            获取大客户名称编号
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseLoAController.Post_SearchBaseLoAManagementList(System.Object)">
+            <summary>
+            获取BaseLoA列表
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseLoAController.Post_BaseLoA_Del(System.String)">
+            <summary>
+            BaseLoA批量删除方法
+            </summary>
+            <param name="Ids">BaseLoAID集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseLoAController.Post_BaseLoASave(EMSPR.Model.Base_LoA)">
+            <summary>
+            保存BaseLoA
+            </summary>
+            <param name="LoA">BaseLoA实体信息 ID=0新增 具体值更新</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseLoAController.Get_BaseLoA_Info(System.Int32)">
+            <summary>
+            获取BaseLoA信息
+            </summary>
+            <param name="ID">BaseLoA_ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseLoAController.Get_BaseLoA_Download">
+            <summary>
+            下载数据
+            </summary>
+            <param name="Formid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseLoAController.GetDictionaryNames(System.String,System.String)">
+            <summary>
+            拼接字典名称，逗号分隔
+            </summary>
+            <param name="type"></param>
+            <param name="codeList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseLoAPGController.Post_SearchBaseLoAPGManagementList(System.Object)">
+            <summary>
+            获取BaseLoAPG列表
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseLoAPGController.Post_BaseLoAPG_Del(System.String)">
+            <summary>
+            BaseLoAPG批量删除方法
+            </summary>
+            <param name="Ids">BaseLoAPGID集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseLoAPGController.Post_BaseLoAPGSave(EMSPR.Model.Base_LoA_PG)">
+            <summary>
+            保存BaseLoAPG
+            </summary>
+            <param name="LoAPG">BaseLoAPG实体信息 ID=0新增 具体值更新</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseLoAPGController.Get_BaseLoAPG_Info(System.Int32)">
+            <summary>
+            获取BaseLoAPG信息
+            </summary>
+            <param name="ID">BaseLoAPG_ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseLoAPGController.Post_BaseLoAPG_Upload">
+            <summary>
+            导入LoAPGExcel
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseLoAPGController.Post_SearchBaseMasterPGManagementList(System.Object)">
+            <summary>
+            获取MasterPG列表
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseLoAPGController.Post_BaseMasterPG_Disable(System.String)">
+            <summary>
+            MasterPG批量Disable方法
+            </summary>
+            <param name="Ids"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseLoAPGController.Post_BasePGSave(EMSPR.Model.Base_PGList)">
+            <summary>
+            保存MasterPG
+            </summary>
+            <param name="PG">MasterPG实体信息 ID=0新增 具体值更新</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseLoAPGController.Get_MasterPG_Info(System.Int32)">
+            <summary>
+            获取MasterPG信息
+            </summary>
+            <param name="ID">MasterPG ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseLoAPGController.Post_MasterPG_Del(System.String)">
+            <summary>
+            BaseLoAPG批量删除方法
+            </summary>
+            <param name="Ids">MasterPG</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseMailController.Post_SearchBaseMailManagementList(System.Object)">
+            <summary>
+            获取BaseMail列表
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseMailController.Post_BaseMail_Del(System.String)">
+            <summary>
+            BaseMail批量删除方法
+            </summary>
+            <param name="Ids">BaseMailID集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseMailController.Post_BaseMailSave(EMSPR.Model.Base_Mail)">
+            <summary>
+            保存BaseMail
+            </summary>
+            <param name="Mail">BaseMail实体信息 ID=0新增 具体值更新</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseMailController.Get_BaseMail_Info(System.Int32)">
+            <summary>
+            获取BaseMail信息
+            </summary>
+            <param name="ID">BaseMail_ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseMLFBController.Post_SearchBaseMLFBManagementList(System.Object)">
+            <summary>
+            获取BaseMLFB列表
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseMLFBController.Post_BaseMLFBOutput(System.Object)">
+            <summary>
+            BaseMLFB明细信息导出
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseMLFBController.Post_SearchBaseMLFBPriceHistoryManagementList(System.Object)">
+            <summary>
+            获取BaseMLFBPriceHistory列表
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseMLFBController.Post_BaseMLFB_Del(System.String)">
+            <summary>
+            BaseMLFB批量删除方法
+            </summary>
+            <param name="Ids">BaseMLFBID集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseMLFBController.Post_BaseMLFBSave(System.Object)">
+            <summary>
+            保存BaseMLFB
+            </summary>
+            <param name="MLFB">BaseMLFB实体信息 ID=0新增 具体值更新</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseMLFBController.Get_BaseMLFB_Info(System.String)">
+            <summary>
+            获取BaseMLFB信息
+            </summary>
+            <param name="Mlfb_Sort_Option">BaseMLFB_ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseMLFBController.Post_SearchBaseMLFBMDManagementList(System.Object)">
+            <summary>
+            获取BaseMLFBMD列表
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseMLFBController.Post_BaseMLFBMD_Del(System.String)">
+            <summary>
+            BaseMLFBMD批量删除方法
+            </summary>
+            <param name="Ids">BaseMLFBMDID集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseMLFBController.Post_BaseMLFB_Upload">
+            <summary>
+            导入MLFB_Excel
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseMLFBController.Get_BaseMLFBMD_Info(System.Int32)">
+            <summary>
+            获取BaseMLFBMD信息
+            </summary>
+            <param name="ID">BaseMLFBMD_ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseMLFBController.Post_SearchBaseMLFBVendorContactManagementList(System.Object)">
+            <summary>
+            获取Vendor联系人列表
+            </summary>
+            <param name="Vendor_NO">供应商编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseMLFBController.Post_BaseMLFBVendorContact_Del(System.String)">
+            <summary>
+            BaseMLFBVendorContact批量删除方法
+            </summary>
+            <param name="Ids">BaseMLFBVendorContactID集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseMLFBController.Post_BaseMLFBVendorContactSave(EMSPR.Model.Base_MLFB_Vendor_Contact)">
+            <summary>
+            保存BaseMLFBVendorContact
+            </summary>
+            <param name="MLFBVendorContact">BaseMLFBVendorContact实体信息 ID=0新增 具体值更新</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseMLFBController.Get_BaseMLFBVendorContact_Info(System.Int32)">
+            <summary>
+            获取Vendor联系人信息
+            </summary>
+            <param name="ID">BaseMLFBVendorContact_ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseMLFBController.Post_SearchNewMLFBManagementList(System.Object)">
+            <summary>
+            获取新物料列表
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseMLFBController.Post_SearchNewMLFBOrderManagementList(System.Object)">
+            <summary>
+            获取新物料Order列表
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseMLFBController.Post_SearchNewMLFBOfferManagementList(System.Object)">
+            <summary>
+            获取新物料Offer列表
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseMLFBController.Post_SearchNewMLFBPre_OrderManagementList(System.Object)">
+            <summary>
+            获取新物料Pre_Order列表
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseMLFBController.Post_BaseNewMLFBSave(System.Object)">
+            <summary>
+            保存NewMLFB
+            </summary>
+            <param name="obj">NewMLFB信息 具体值更新</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseMLFBController.Post_SortZOption(System.Object)">
+            <summary>
+            Zoption 排序
+            </summary>
+            <param name="obj">mlfb</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseMLFBController.Post_BaseMLFBMaterialChange(System.Object)">
+            <summary>
+            BaseMLFB明细信息导出
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseSGAQuotaRecordController.Post_SearchBaseSGAQuotaRecordManagementList(System.Object)">
+            <summary>
+            获取BaseSGAQuotaRecord列表
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseSGAQuotaRecordController.Post_BaseSGAQuotaRecord_Del(System.String)">
+            <summary>
+            BaseSGAQuotaRecord批量删除方法
+            </summary>
+            <param name="Ids">BaseSGAQuotaRecordID集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseSGAQuotaRecordController.Post_BaseSGAQuotaRecordSave(EMSPR.Model.Base_SGA_Quota_Record)">
+            <summary>
+            保存BaseSGAQuotaRecord
+            </summary>
+            <param name="SGAQuotaRecord">BaseSGAQuotaRecord实体信息 ID=0新增 具体值更新</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseSGAQuotaRecordController.Get_BaseSGAQuotaRecord_Info(System.Int32)">
+            <summary>
+            获取BaseSGAQuotaRecord信息
+            </summary>
+            <param name="ID">BaseSGAQuotaRecord_ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseSGAQuotaRecordController.Post_BaseSGAQuotaRecord_Upload">
+            <summary>
+            导入SGAQuotaRecord_Excel
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseSoldToController.Post_SearchBaseSoldToManagementList(System.Object)">
+            <summary>
+            获取SoldTo列表
+            </summary>
+            <param name="Customer_NO">Customer_NO</param>
+            <param name="Company_Name_CN">Company_Name_CN</param>
+            <param name="Company_Name_EN">Company_Name_EN</param>
+            <param name="Is_Valid">Is_Valid</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseSoldToController.Post_BaseSoldTo_Del(System.String)">
+            <summary>
+            BaseSoldTo批量删除方法
+            </summary>
+            <param name="Ids">BaseSoldToID集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseSoldToController.Post_BaseSoldToSave(System.Object)">
+            <summary>
+            保存BaseSoldTo
+            </summary>
+            <param name="SoldTo">BaseSoldTo实体信息 ID=0新增 具体值更新</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseSoldToController.Get_BaseSoldTo_Info(System.Int32)">
+            <summary>
+            获取客户基本信息
+            </summary>
+            <param name="ID">BaseSoldTo_ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseSoldToController.Get_BaseSoldToSales_Info(System.String)">
+            <summary>
+            获取客户基本信息
+            </summary>
+            <param name="CustomerNO">BaseSoldTo_CustomerNo</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseSoldToController.Post_BaseSoldToBASave(System.Object)">
+            <summary>
+            保存客户商务
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseSoldToController.Post_UplaodBaseSoldToBA">
+            <summary>
+            导入客户商务
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseSoldToController.Post_SearchBaseSoldToRegionalBAList(System.Object)">
+            <summary>
+            查询客户商务
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseSoldToController.Post_BaseSoldToRegionalBA_Del(System.String)">
+            <summary>
+            BaseSoldToRegionalBA批量删除方法
+            </summary>
+            <param name="Ids">BA集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseSoldToController.Get_BaseSoldToRegionalBA_Info(System.Int32)">
+            <summary>
+            获取客户商务基本信息
+            </summary>
+            <param name="ID">ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseSoldToShipToMappingController.Post_SearchBaseSoldToShipToMappingManagementList(System.Object)">
+            <summary>
+            获取BaseSoldToShipToMapping列表
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseSoldToShipToMappingController.Post_BaseSoldToShipToMapping_Del(System.String)">
+            <summary>
+            BaseSoldToShipToMapping批量删除方法
+            </summary>
+            <param name="Ids">BaseSoldToShipToMappingID集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseSoldToShipToMappingController.Post_BaseSoldToShipToMappingSave(EMSPR.Model.Base_Sold_To_Ship_To_Mapping,System.Int32)">
+            <summary>
+            保存BaseSoldToShipToMapping
+            </summary>
+            <param name="SoldToShipToMapping">BaseSoldToShipToMapping实体信息 ID=0新增 具体值更新</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseSoldToShipToMappingController.Get_BaseSoldToShipToMapping_Info(System.Int32)">
+            <summary>
+            获取BaseSoldToShipToMapping信息
+            </summary>
+            <param name="ID">BaseSoldToShipToMapping_ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseSoldToShipToMappingController.Post_BaseSoldToShipToMapping_Upload">
+            <summary>
+            导入BaseSoldToShipToMapping_Excel
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseSoldToShipToMappingController.Get_BaseSoldToInfo(System.String,System.String)">
+            <summary>
+            获取客户基本信息
+            </summary>
+            <param name="NO">盘厂编号或客户编号</param>
+            <param name="Type">1:盘厂，2：客户</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseSoldToShipToMappingController.Get_SearchHanaShipToInfoByCode(System.String)">
+            <summary>
+            查询HANA收货方信息
+            </summary>
+            <param name="shiptocode">收货方编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseSysParameterController.Get_SysParameterDropDown">
+            <summary>
+            BaseSysParameter下拉框
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseSysParameterController.Post_SearchBaseSysParameterManagementList(System.Object)">
+            <summary>
+            获取BaseSysParameter列表
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseSysParameterController.Post_BaseSysParameter_Del(System.String)">
+            <summary>
+            BaseSysParameter批量删除方法
+            </summary>
+            <param name="Ids">BaseSysParameterID集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseSysParameterController.Post_BaseSysParameterSave(EMSPR.Model.Base_Sys_Parameter)">
+            <summary>
+            保存BaseSysParameter
+            </summary>
+            <param name="SysParameter">BaseSysParameter实体信息 ID=0新增 具体值更新</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseSysParameterController.Get_BaseSysParameter_Info(System.Int32,System.String)">
+            <summary>
+            获取BaseSysParameter信息
+            </summary>
+            <param name="ID">BaseSysParameter_ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseViewManagementController.Post_SearchBaseViewManagementList(System.Object)">
+            <summary>
+            获取BaseViewManagement列表
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseViewManagementController.Post_BaseViewManagement_Del(System.String)">
+            <summary>
+            BaseViewManagement批量删除方法
+            </summary>
+            <param name="Ids">BaseViewManagementID集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseViewManagementController.Post_BaseViewManagementSave(EMSPR.Model.Base_View_Management)">
+            <summary>
+            保存BaseViewManagement
+            </summary>
+            <param name="ViewManagement">BaseViewManagement实体信息 ID=0新增 具体值更新</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.BaseViewManagementController.Get_BaseViewManagement_Info(System.Int32)">
+            <summary>
+            获取BaseViewManagement信息
+            </summary>
+            <param name="ID">BaseViewManagement_ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DelegationController.Post_SearchAuthDelegationManagementList(System.Object)">
+            <summary>
+            获取Delegation列表
+            </summary>
+            <param name="Approver">Approver</param>
+            <param name="Delegate_Person">Delegate_Person</param>
+            <param name="Function">Function</param>
+            <param name="Valid_Start">Valid_Start</param>
+            <param name="Valid_End">Valid_End</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DelegationController.Post_AuthDelegation_Del(System.String)">
+            <summary>
+            AuthDelegation批量删除方法
+            </summary>
+            <param name="Ids">AuthDelegationID集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DelegationController.Post_AuthDelegationSave(EMSPR.Model.Auth_Delegation)">
+            <summary>
+            保存AuthDelegation
+            </summary>
+            <param name="Delegation">AuthDelegation实体信息 ID=0新增 具体值更新</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DelegationController.Get_AuthDelegation_Info(System.Int32)">
+            <summary>
+            获取Delegation信息
+            </summary>
+            <param name="ID">AuthDelegation_ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DelegationController.GetDictionaryNames(System.String,System.String)">
+            <summary>
+            拼接字典名称，逗号分隔
+            </summary>
+            <param name="type"></param>
+            <param name="codeList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DGRegistryController.Post_SearchMyAssignment(System.Object)">
+            <summary>
+            查询项目注册列表方法MyAssign 
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DGRegistryController.Post_SearchView(System.Object)">
+            <summary>
+            查询项目注册列表方法 MyView
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DGRegistryController.Post_SearchAllView(System.Object)">
+            <summary>
+            查询项目注册列表方法 MyView
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DGRegistryController.Post_ProjectExcelOutput(System.Object)">
+            <summary>
+            导出项目注册myview
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DGRegistryController.Get_ProjectDetail(System.String)">
+            <summary>
+            获取项目注册详细信息
+            </summary>
+            <param name="Formid">eg:45BABB7D-6DB3-494C-AF4C-C8E3BB03E802</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DGRegistryController.Post_SaveProject(System.Object)">
+            <summary>
+            项目注册保存
+            </summary>
+            <param name="Post_SaveProject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DGRegistryController.Post_SubmitProject(System.Object)">
+            <summary>
+            项目注册流程提交
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DGRegistryController.Post_ApprovalProject(System.Object)">
+            <summary>
+            项目注册流程审批
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DGRegistryController.Get_DGProject_Delete(System.String)">
+            <summary>
+            删除方法
+            </summary>
+            <param name="Formid">formid</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DGRegistryController.Post_ChangeLogdata(System.Object)">
+            <summary>
+            获取历史修改信息
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DGRegistryController.Post_ChangeLogExcelOutput(System.Object)">
+            <summary>
+            历史修改信息导出
+            </summary>
+            <param name="Project_NO"></param>
+            <param name="Modify_Element">目前只有OI_Date,OI_Volume,Project_Status；多个参数用逗号隔开</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DGRegistryController.Post_ProductChangeLogdata(System.Object)">
+            <summary>
+            获取产品修改记录
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DGRegistryController.Get_UserOfferRegion(System.String)">
+            <summary>
+            获取申请人的办事处和区域
+            </summary>
+            <param name="login_id">申请人ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DGRegistryController.Get_PG0">
+            <summary>
+            获取PG0信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DGRegistryController.Get_PG0LevelChild(System.String)">
+            <summary>
+            根据PG0 获取PG1和PG2信息
+            </summary>
+            <param name="pg0"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DGRegistryController.Get_PG1LevelChild(System.String)">
+            <summary>
+            根据PG1 获取PG2信息
+            </summary>
+            <param name="pg1"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DGRegistryController.Post_NationList(System.Object)">
+            <summary>
+            获得国家和地区信息
+            </summary>
+            <param name="PAB_Name_CN"></param>
+            <param name="recordNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DivisionController.Post_SearchBaseDivisionManagementList(System.Object)">
+            <summary>
+            查询物料Division方法
+            </summary>
+            <param name="PG0"></param>
+            <param name="Org1"></param>
+            <param name="Org2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DivisionController.Post_BaseDivision_Del(System.String)">
+            <summary>
+            批量删除方法
+            </summary>
+            <param name="Ids">BaseDivisionID集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DivisionController.Post_BaseDivisionSave(EMSPR.Model.Base_Division)">
+            <summary>
+            保存物料Division
+            </summary>
+            <param name="division">Division实体信息 Base_Division_ID=0新增 具体值更新</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DivisionController.Get_BaseDivision_Info(System.Int32)">
+            <summary>
+            获取物料Division信息
+            </summary>
+            <param name="ID">Division_ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DictionaryController.Post_SearchBaseDictionaryManagementList(System.Object)">
+            <summary>
+            获取BaseDictionary列表
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DictionaryController.Post_BaseDictionary_Del(System.String)">
+            <summary>
+            BaseDictionary批量删除方法
+            </summary>
+            <param name="Ids">BaseDictionaryID集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DictionaryController.Post_BaseDictionarySave(EMSPR.Model.Base_Dictionary)">
+            <summary>
+            保存BaseDictionary
+            </summary>
+            <param name="Dictionary">BaseDictionary实体信息 ID=0新增 具体值更新</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DictionaryController.Get_DictionaryType">
+            <summary>
+            获取字典表type信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DictionaryController.Get_BaseDictionary_Info(System.Int32)">
+            <summary>
+            获取BaseDictionary信息
+            </summary>
+            <param name="ID">BaseDictionary_ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DictionaryController.Get_DictionaryByType(System.String,System.String,System.String)">
+            <summary>
+            获取字典信息
+            </summary>
+            <param name="Type">类型 eg:MAIN_OFFICE</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DictionaryController.Get_DictionaryNameByType(System.String,System.String)">
+            <summary>
+            获取字典信息(只返回Name)
+            </summary>
+            <param name="Type">只返回Name</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DictionaryController.Get_Org2(System.String)">
+            <summary>
+            获取org2的信息
+            </summary>
+            <param name="Code">org1的code</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DictionaryController.Get_Company">
+            <summary>
+            获取外部用户公司信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DictionaryController.Get_Org1ListData">
+            <summary>
+            获取当前用户的Org1信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DictionaryController.Get_Org2ListData(System.String)">
+            <summary>
+            获取当前用户的Org2信息
+            </summary>
+            <param name="Code">org1的code</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DictionaryController.Get_GeneralDBData(System.String,System.String,System.String)">
+            <summary>
+            获取数据库信息
+            </summary>
+            <param name="cells">需要查询的字段</param>
+            <param name="tablename">表名</param>
+            <param name="where">查询条件 eg:where 1=1 </param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DictionaryController.Get_MainOfficeByRegion(System.String)">
+            <summary>
+            根据区域查找mainoffice信息
+            </summary>
+            <param name="RegionCode">区域编码，多个用逗号隔开</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DictionaryController.Get_TaskNumber(System.String,System.String,System.String)">
+            <summary>
+            查询待办数量
+            </summary>
+            <param name="processName">流程名称</param>
+            <param name="loginId">登陆账号 eg:admin</param>
+            <param name="type">1 草稿 或2 待办</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DictionaryController.Get_PreOrderTaskNumber">
+            <summary>
+            获取pre_order待办
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DictionaryController.Get_TaskNumberfore2e(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="loginId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.DictionaryController.Get_VCBTaskCountforfore2e(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="loginId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.FileOptController.ExcelInput">
+            <summary>
+            Excel导入
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.FileOptController.ExcelOutput">
+            <summary>
+            Excel导出
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.FileOptController.Post_Upload_Attachment(System.String)">
+            <summary>
+            附件上传
+            </summary>
+            <param name="formid">流程表主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.FileOptController.FileRemove(System.String)">
+            <summary>
+            删除附件
+            </summary>
+            <param name="fileid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.FileOptController.Get_Download_Attachment(System.String)">
+            <summary>
+            附件下载
+            </summary>
+            <param name="fileid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.FileOptController.Get_Attachment_List(System.String)">
+            <summary>
+            获取附件列表
+            </summary>
+            <param name="formid">流程表主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.FileOptController.Get_Attachment(System.String)">
+            <summary>
+            获取单个附件
+            </summary>
+            <param name="formid">流程表主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ForecastController.Post_ShowQty(System.String,System.String)">
+            <summary>
+            查询Forecast列表方法ShowQty
+            </summary>
+            <param name="Offer_NO"></param>
+            <param name="formid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ForecastController.Post_ShowVol(System.String,System.String)">
+            <summary>
+            查询Forecast列表方法ShowVol
+            </summary>
+            <param name="Offer_NO"></param>
+            <param name="formid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ForecastController.Post_SaveForecast(System.Object)">
+            <summary>
+            保存Forecast信息
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ForecastController.Get_ForecastQtyExcelOutput(System.String)">
+            <summary>
+            导出Forecast数量信息
+            </summary>
+            <param name="Formid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ForecastController.Get_ForecastVolExcelOutput(System.String)">
+            <summary>
+            导出Forecast金额信息
+            </summary>
+            <param name="Formid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.LoginController.Post_SSOLogin(System.Object)">
+            <summary>
+            单点登录
+            </summary>
+            <param name="obj">单点登录传进来的token</param>
+            <returns></returns>
+        </member>
+        <member name="T:SPR.WebAPI.Controllers.OcrController">
+            <summary>
+            识别pdf中orc的控制器
+            </summary>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OcrController.Post_RecognizeOCR(System.Object)">
+            <summary>
+            给定一个pdf文档的路径，返回识别出的ocr信息
+            </summary>
+            <param name="obj">传入参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OcrController.Post_RecognizeCSV(System.Object)">
+            <summary>
+            读取CSV
+            </summary>
+            <param name="obj">传入参数FileId,DamexENo</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.Post_SearchMyAssignment(System.Object)">
+            <summary>
+            查询offer列表方法（人员）MyAssign 
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.Post_SearchView(System.Object)">
+            <summary>
+            查询offer列表方法（其他） MyView
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.Post_MyWorkflow(System.Object)">
+            <summary>
+            offer MyWorkflow
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.Post_AllView(System.Object)">
+            <summary>
+            查询所有的offer方法
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.Post_OfferExcelOutput(System.Object)">
+            <summary>
+            导出offer的myview
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.Get_OEMInfo(System.String,System.String)">
+            <summary>
+            根据名称或者编码获取OEM信息
+            </summary>
+            <param name="OEMName"></param>
+            <param name="OEMCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.Get_OEMList(System.Object)">
+            <summary>
+            模糊搜索OEM信息
+            </summary>
+            <param name="OEMName"></param>
+            <param name="recordNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.Get_Offer_Delete(System.String)">
+            <summary>
+            删除offer方法
+            </summary>
+            <param name="formid">formid</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.Post_SaveOffer(System.Object)">
+            <summary>
+            保存offer信息
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.Post_SubmitOffer(System.Object)">
+            <summary>
+            提交offer接口
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.Post_ApprovalOffer(System.Object)">
+            <summary>
+            审批offer接口
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.Get_ProcessBack(System.String,System.Int32)">
+            <summary>
+            offer流程撤回
+            </summary>
+            <param name="processname">流程名称</param>
+            <param name="incident">实例号</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.Get_GetOfferDetils(System.String,System.Boolean)">
+            <summary>
+            获取offer信息
+            </summary>
+            <param name="Formid">主键</param>
+            /// <param name="view_only">view</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.Get_MLFB_Info(System.String,System.String)">
+            <summary>
+            根据Mlfb_Sort_Option获取mlfb的信息
+            </summary>
+            <param name="Mlfb_Sort_Option"></param>
+            <param name="formid">proc_offer表formid</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.Post_Upload_MLFB_Data(System.String)">
+            <summary>
+            根据模板获取mlfb的信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.Post_Upload_MLFB_COC">
+            <summary>
+            COC上传物料信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.Post_FigureBookingSave(System.Object)">
+            <summary>
+            winlosss Figure-Booking 保存
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.Get_FigureBookingDetail(System.String)">
+            <summary>
+            winlosss Figure-Booking 获取详细信息
+            </summary>
+            <param name="formid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.Post_CommentsSave(EMSPR.Model.Proc_Comments)">
+            <summary>
+            邀请评论和回复评论功能
+            </summary>
+            <param name="comments"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.Get_Comments(System.String,System.String)">
+            <summary>
+            查询评论
+            </summary>
+            <param name="formid"></param>
+            <param name="processName"> Offer,Order,不传默认为 Offer</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.Post_SalesWinLossList(System.Object)">
+            <summary>
+            审批完成的流程15天内未修改为win/loss状态 20190211 修改为30天
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.Get_ShipTo(System.String,System.String)">
+            <summary>
+            shipto接口
+            </summary>
+            <param name="PAB_NO"></param>
+            <param name="Cusomer_NO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.Get_SalesRegionBA(System.String)">
+            <summary>
+            Sales Region BA接口
+            </summary>
+            <param name="Cusomer_NO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.ConversionName(System.String)">
+            <summary>
+            CCM系统 PG0转换名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.ConversionName(System.String,System.String)">
+            <summary>
+            PG0转换名称
+            </summary>
+            <param name="pg0"></param>
+            <param name="country"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.Get_VendorBranchCode(System.String)">
+            <summary>
+            获取代理商牌照号
+            </summary>
+            <param name="customerNo">代理商编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.Get_OfferColse(System.String)">
+            <summary>
+            offer关闭接口
+            </summary>
+            <param name="formid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.Post_MLFBPrice(System.Object)">
+            <summary>
+            根据mlfb获取listprice和GAprice
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.Post_OfferDTOutput(System.Object)">
+            <summary>
+            offer明细信息导出
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.Post_OfferAllAttachment(System.Object)">
+            <summary>
+            获取Offer所有附件
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.GetOfferReference(System.String,System.String,System.String)">
+            <summary>
+            按Offer PG2类型获取相应信息
+            </summary>
+            <param name="formid">offer form id</param>
+            <param name="start_date">start time</param>
+            <param name="type">
+            1--customer
+            2--sales
+            3--main office
+            4--pab
+            5--end user
+            6--branch
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.GetOfferReferenceExport(System.String,System.String,System.String)">
+            <summary>
+            导出OfferReference
+            </summary>
+            <param name="formid"></param>
+            <param name="start_date"></param>
+            <param name="type">
+            1--customer
+            2--sales
+            3--main office
+            4--pab
+            5--end user
+            6--branch
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.BranchCodeVerfic(System.Collections.Generic.List{EMSPR.Model.Proc_Offer_DT},EMSPR.Model.Proc_Offer)">
+            <summary>
+            产品牌照信息校验
+            </summary>
+            <param name="offerDt"></param>
+            <param name="offer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.Post_SearchView_His(System.Object)">
+            <summary>
+            查询offer调价后历史列表方法
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OfferController.Get_GetOfferDetilsHis(System.String,System.Boolean)">
+            <summary>
+            获取offer调价后offer详情信息
+            </summary>
+            <param name="Formid">主键</param>
+            /// <param name="view_only">view</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderVCBController.Get_VCBTaskCount">
+            <summary>
+            查询待办VCB Task数量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderVCBController.Get_VCBTaskCountforfore2e">
+            <summary>
+            查询待办VCB Task数量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderVCBController.Post_VCBSearchOrders(System.Object)">
+            <summary>
+            查询VCB Order列表方法（人员）MyVCBOrders 
+            </summary>
+            <param name="obj">obj</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderVCBController.Post_VCBExportOrderList(System.Object)">
+            <summary>
+            导出当前VCB Order列表到Excel文件的方法 
+            </summary>
+            <param name="obj">obj</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderVCBController.Get_VCBOrderInfo(System.String)">
+            <summary>
+            查询VCB Order列表方法（人员）MyVCBOrders 
+            </summary>
+            <param name="Order_NO">Order_NO</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderVCBController.Get_VCBExportMLFBList(System.String)">
+            <summary>
+            导出当前VCB Order的MLFB列表到Excel文件的方法 
+            </summary>
+            <param name="Order_NO">Order_NO</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderVCBController.Get_VCBProductInfo(System.String,System.String,System.String,System.String)">
+            <summary>
+            查询VCB Order列表方法（人员）MyVCBOrders 
+            </summary>
+            <param name="Project_Id">Project_Id</param>
+            <param name="Order_NO">Order_NO</param>
+            <param name="Product_Id">Product_Id</param>
+            <param name="Order_DT_Id">Order_DT_Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderVCBController.Post_VCBUploadFile(System.String,System.String,System.String,System.String)">
+            <summary>
+            附件上传
+            </summary>
+            <param name="Project_Id">Project_Id</param>
+            <param name="Product_Id">Product_Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderVCBController.Post_VCBSubmit(System.Object)">
+            <summary>
+            Product的Submit Action操作 
+            </summary>
+            <param name="obj">obj</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderVCBController.Post_UpdateDrawingTip(System.Object)">
+            <summary>
+            如果是复用的，判断图纸是否升级，如果升级，则给出提示。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderVCBController.InitVCBOrder(System.String)">
+            <summary>
+            Order创建完成后调用VCB流程 
+            </summary>
+            <param name="orderFormId">orderFormId</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderVCBController.VCB_Reject_Order(System.String)">
+            <summary>
+            买方修改主单据状态
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderVCBController.GenerateVCBPDF(System.String,System.String,System.String,System.String)">
+            <summary>
+            temp for test
+            </summary>
+            <param name="techReviewInfo">techReviewInfo</param>
+            <returns></returns>
+        </member>
+        <member name="F:SPR.WebAPI.Controllers.OrderController.CPBU">
+            <summary>
+            CPBU,LPBU
+            </summary>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderController.Post_SearchMyAssignment(System.Object)">
+            <summary>
+            查询Order列表方法（人员）MyAssign 
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderController.Post_SearchView(System.Object)">
+            <summary>
+            查询offer列表方法（其他） MyView
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderController.Post_MyWorkflow(System.Object)">
+            <summary>
+            offer MyWorkflow
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderController.Post_AllView(System.Object)">
+            <summary>
+            查询offer列表方法（其他） MyView
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderController.Post_OrderExcelOutput(System.Object)">
+            <summary>
+            导出order的myview
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderController.Get_Order_Delete(System.String)">
+            <summary>
+            删除order方法
+            </summary>
+            <param name="formid">formid</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderController.Post_SaveOrder(System.Object)">
+            <summary>
+            保存order信息
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderController.SaveProjectIDToOrder(System.String,System.String)">
+            <summary>
+            大客户订单保存项目时更新项目号
+            </summary>
+            <param name="p_formid">项目formid</param>
+            /// <param name="o_formid">Order formid</param>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderController.Post_SubmitOrder(System.Object)">
+            <summary>
+            提交Order接口
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderController.Post_ApprovalOrder(System.Object)">
+            <summary>
+            审批Order接口
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderController.Get_GetOrderDetils(System.String,System.Boolean)">
+            <summary>
+            获取order信息
+            </summary>
+            <param name="formid">主键</param>
+            /// <param name="view_only">view model</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderController.Get_OrderSOInfo(System.String,System.String)">
+            <summary>
+            Get order SO
+            </summary>
+            <param name="CustomerNO"></param>
+            <param name="OrderNO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderController.Get_SPRReplyToETE(System.String,System.String)">
+            <summary>
+            Order二次提交调用ETE接口
+            </summary>
+            <param name="Status"></param>
+            <param name="OrderNO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderController.CheckPreOrderNO(EMSPR.Model.Proc_Order)">
+            <summary>
+            校验preOrder编号重复
+            </summary>
+            <param name="preOrderNo">PreOrderNo</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderController.Post_SaveFrameOrder(System.Object)">
+            <summary>
+            Frame order保存
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderController.ConversionName(System.String)">
+            <summary>
+            CCM系统 PG0转换名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderController.ConversionName(System.String,System.String)">
+            <summary>
+            PG0转换名称
+            </summary>
+            <param name="pg0"></param>
+            <param name="country"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderController.Get_AgreeMentNo(System.String,System.String,System.String)">
+            <summary>
+            获取销售可以选择的协议号
+            </summary>
+            <param name="type">协议类型编码</param>
+            <param name="padNo">盘厂编码</param>
+            <param name="venderNo">协议分销商编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderController.Post_Upload_MLFB_Data_Frame">
+            <summary>
+            Frame order根据模板获取mlfb的信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderController.Post_Upload_MLFB_Data_FrameNew(System.String)">
+            <summary>
+            Frame order根据模板获取mlfb的信息并获取协议里面的折扣
+            </summary>
+            <param name="agreementNo">协议号</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderController.Post_OrderDTOutput(System.Object)">
+            <summary>
+            order明细信息导出
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderController.Post_OrderForDamexE(System.Object)">
+            <summary>
+            获取DamexE文件号
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderController.Post_CheckDamexEInfo(System.Object)">
+            <summary>
+            DamexE检查
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderController.Post_OrderAllAttachment(System.Object)">
+            <summary>
+            获取Order所有附件
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderController.BranchCodeVerfic(System.Collections.Generic.List{EMSPR.Model.Proc_Order_DT},EMSPR.Model.Proc_Order)">
+            <summary>
+            产品牌照信息校验
+            </summary>
+            <param name="orderDts"></param>
+            <param name="order"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderController.Post_SearchViewHis(System.Object)">
+            <summary>
+            查询调价后历史order列表方法
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.OrderController.Get_GetOrderDetilsHis(System.String,System.Boolean)">
+            <summary>
+            获取调价后历史order信息
+            </summary>
+            <param name="formid">主键</param>
+            /// <param name="view_only">view model</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_Pab_SearchView(System.Object)">
+            <summary>
+            盘厂综合查询
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_Pab_SearchViewExcelOutput(System.Object)">
+            <summary>
+            盘厂综合查询导出
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Get_PabOrderTaskNumberForPab">
+            <summary>
+            盘厂代办任务数量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_Pab_SearchMyAssignment(System.Object)">
+            <summary>
+            盘厂我的任务查询
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_Pab_MyAssignmentExcelOutput(System.Object)">
+            <summary>
+            盘厂我的任务导出
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_Dis_SearchView(System.Object)">
+            <summary>
+            分销商综合查询
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_Dis_SearchViewExcelOutput(System.Object)">
+            <summary>
+            分销商综合查询导出
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Get_PabOrderTaskNumberForDis">
+            <summary>
+            分销商代办任务数量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.DisAssignmentSQL(System.Collections.Generic.List{EMSPR.Model.Auth_Role},EMSPR.Model.V_User_Info)">
+            <summary>
+            获取分销商Assignment查询脚本
+            </summary>
+            <param name="currentRole"></param>
+            <param name="userInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_Dis_SearchMyAssignment(System.Object)">
+            <summary>
+            分销商我的任务查询
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_Dis_MyAssignmentExcelOutput(System.Object)">
+            <summary>
+            分销商我的任务导出
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_Upload_MLFB_Data(System.String)">
+            <summary>
+            根据模板获取mlfb的信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Get_MLFB_Info(System.String)">
+            <summary>
+            根据Mlfb_Sort_Option获取mlfb的信息
+            </summary>
+            <param name="Mlfb_Sort_Option"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_PabOrderDTOutput(System.Object)">
+            <summary>
+            PabOrder明细信息导出
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_PabSiemensQtyOutput(System.Object)">
+            <summary>
+            西门子下单数量导出
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_Upload_SiemensQty(System.String)">
+            <summary>
+            西门子下单数量导入
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_PabShipQtyOutput(System.Object)">
+            <summary>
+            分销商发货数量导出
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_Upload_ShipQty(System.String)">
+            <summary>
+            分销商发货数量导入
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_PabDiscountOffOutput(System.Object)">
+            <summary>
+            导出分销商确认交货日期和反馈折扣
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_Upload_DiscountOff(System.String)">
+            <summary>
+            导入分销商确认交货日期和反馈折扣
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_SavePabOrder(System.Object)">
+            <summary>
+            发起询价时，保存
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Get_GetPabOrderDetils(System.String)">
+            <summary>
+            获取PabOrder信息
+            </summary>
+            <param name="formid">主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Get_PabOrder_Delete(System.String)">
+            <summary>
+            删除paborder方法
+            </summary>
+            <param name="formid">formid</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Get_DistributorByPab(System.String)">
+            <summary>
+            根据盘厂编号获取分销商信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_SubmitPabOrder(System.Object)">
+            <summary>
+            提交Order接口
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Get_PabOrderColse(System.String,System.String)">
+            <summary>
+            关闭项目
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Get_DisConfirmOrderClose(System.String,System.String,System.String)">
+            <summary>
+            关闭项目
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_SaveReqOrder(System.Object)">
+            <summary>
+            询价单的保存
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_DisConfirmList(System.Object)">
+            <summary>
+            分销商确认清单
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_DisGoBack(System.Object)">
+            <summary>
+            分销商回退
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_PabSubmitAgain(System.Object)">
+            <summary>
+            盘厂再次提交
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_PabFinalConfirm(System.Object)">
+            <summary>
+            盘厂最终确认采购信息
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_DisConfirmPreOrder(System.Object)">
+            <summary>
+            分销商下单前的确认
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_PabSaveOrder(System.Object)">
+            <summary>
+            保存
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_MLFB_Special_Discount_Off(System.String,System.String)">
+            <summary>
+            下单后跳到新建渠道政策订单，带过去的物料和折扣信息
+            </summary>
+            <param name="agreementNo">协议号</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.WriteBackOrderNo(System.String,System.String,System.Collections.Generic.List{EMSPR.Model.Proc_Order_DT})">
+            <summary>
+            渠道政策订提交后，给盘厂下单回写订单号 
+            </summary>
+            <param name="orderFormId">orderFormId</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.DeleteWriteBackOrderNo(System.String,System.String,System.Collections.Generic.List{EMSPR.Model.Proc_Order_DT})">
+            <summary>
+            渠道政策订单拒绝后，把之前回写的订单数量和下单批次删除
+            </summary>
+            <param name="orderFormId">orderFormId</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_DisShip(System.Object)">
+            <summary>
+            分销商发货
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_SearchNoReceiveList(System.Object)">
+            <summary>
+            批量收货详细列表
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_PabLastReceive(System.Object)">
+            <summary>
+            盘厂批次收货
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_PabReceive(System.Object)">
+            <summary>
+            盘厂批次收货
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_PabAllReceive(System.Object)">
+            <summary>
+            盘厂全部收货
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_PabSorce(System.Object)">
+            <summary>
+            评价
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Get_Topping_Pab(System.String)">
+            <summary>
+            盘厂置顶
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Get_Unpin_Pab(System.String)">
+            <summary>
+            盘厂取消置顶
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Get_Topping_Dis(System.String)">
+            <summary>
+            分销商置顶
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Get_Unpin_Dis(System.String)">
+            <summary>
+            分销商取消置顶
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_MlfbUpdateLog(System.Guid,System.Collections.Generic.List{EMSPR.Model.Proc_Pab_Order_DT})">
+            <summary>
+            物料的修改记录
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_ProductChangeLogdata(System.Object)">
+            <summary>
+            获取物料修改记录
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.CheckStatus(System.Guid,System.String)">
+            <summary>
+            在操作前检查订单状态是否被修改
+            </summary>
+            <param name="formid">订单ID</param>
+            <param name="status">检查状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_Pab_Distributor_List(System.Object)">
+            <summary>
+            盘厂与分销商询价列表
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PabOrderController.Post_Pab_Distributor_Output(System.Object)">
+            <summary>
+            盘厂与分销商询价列表导出
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PreOrderController.Post_SearchMyAssignment(System.Object)">
+            <summary>
+            查询Pre_Order列表方法（人员）MyAssignment 
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PreOrderController.Post_SearchView(System.Object)">
+            <summary>
+            查询Pre_Order列表方法（其他） MyView
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PreOrderController.Post_Pre_Order_Delete(System.String)">
+            <summary>
+            删除Pre_Order方法
+            </summary>
+            <param name="formid">formid</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PreOrderController.Post_SavePre_Order(System.Object)">
+            <summary>
+            保存Pre_Order信息
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PreOrderController.Post_SubmitPre_Order(System.Object)">
+            <summary>
+            提交Pre_Order接口
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PreOrderController.Post_ApprovalPre_Order(System.Object)">
+            <summary>
+            审批Pre_Order接口
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PreOrderController.Get_GetPre_OrderDetils(System.String)">
+            <summary>
+            获取Pre_Order信息
+            </summary>
+            <param name="formid">主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PreOrderController.Post_Upload_MLFB_Data_Sales">
+            <summary>
+            销售根据模板上传mlfb的信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PreOrderController.Get_PreOrderDTExcelOutput(System.String)">
+            <summary>
+            导出PreOrder物料数据
+            </summary>
+            <param name="Formid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.PreOrderController.Post_Upload_MLFB_Data_Approve(System.String)">
+            <summary>
+            审批人根据模板保存mlfb的信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProcessInfoController.Get_WorkFlow(System.String)">
+            <summary>
+             获取工作流实例里面的数据
+            </summary>
+            <param name="formid">流程信息主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProcessInfoController.Get_DGWorkFlow(System.String)">
+            <summary>
+             获取DG工作流数据
+            </summary>
+            <param name="formid">流程信息主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProcessInfoController.Get_ProcessActiveStep(System.String,System.Int32)">
+            <summary>
+            获取流程当前步骤
+            </summary>
+            <param name="processName"></param>
+            <param name="incident"></param>
+            <returns>如果返回FInish表示结束，如果返回空 表示未找到</returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProcessInfoController.Get_ProcessActiveStep4External(System.String)">
+            <summary>
+            获取外部客户流程当前步骤
+            </summary>
+            <param name="formid"></param>
+            <returns>如果返回FInish表示结束，如果返回空 表示未找到</returns>
+        </member>
+        <member name="T:SPR.WebAPI.Controllers.ProcessInfoController.WorkFlowEntity">
+            <summary>
+            工作流参数实体
+            </summary>
+        </member>
+        <member name="T:SPR.WebAPI.Controllers.ProcessInfoController.EmailEntity">
+            <summary>
+            邮件实体
+            </summary>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProcessInfoController.Post_SaveWorkFlow(SPR.WebAPI.Controllers.ProcessInfoController.WorkFlowEntity)">
+            <summary>
+            保存工作流实例
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProcessInfoController.Get_ApprovalHistory(System.String,System.Int32,System.String)">
+            <summary>
+            获取审批历史记录信息
+            </summary>
+            <param name="processName">流程名称</param>
+            <param name="incident">实例号</param>
+            <param name="orderNo">订单号</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProcessInfoController.Get_DGApprovalHistory(System.String,System.Int32)">
+            <summary>
+            获取DG审批历史记录信息
+            </summary>
+            <param name="processName">流程名称</param>
+            <param name="incident">实例号</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProcessInfoController.Post_EmailSend(SPR.WebAPI.Controllers.ProcessInfoController.EmailEntity)">
+            <summary>
+            发送邮件接口
+            </summary>
+            <param name="emailEntity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProcSOController.Post_Proc_SOSave(EMSPR.Model.Proc_SO)">
+            <summary>
+            新增更新接口
+            </summary>
+            <param name="procSo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProcSOController.Get_Offer_Delete(System.Int32)">
+            <summary>
+            删除接口
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProcSOController.Post_SearchProcSOList(System.Object)">
+            <summary>
+            查询列表接口
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProcSOController.Get_Order_DT_ByOrderNo(System.String)">
+            <summary>
+            根据order_no获取mlfb的信息
+            </summary>
+            <param name="Order_NO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProductGroupController.Post_SearchBaseProductGroupManagementList(System.Object)">
+            <summary>
+            查询物料Division方法
+            </summary>
+            <param name="PG3"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProductGroupController.Post_BaseProductGroup_Del(System.String)">
+            <summary>
+            批量删除方法
+            </summary>
+            <param name="Ids">BaseProductGroupID集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProductGroupController.Post_BaseDivisionSave(EMSPR.Model.Base_Product_Group)">
+            <summary>
+            保存流程配置信息
+            </summary>
+            <param name="productGroup">productGroup实体信息 Base_Product_Group_ID=0新增 具体值更新</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProductGroupController.Get_BaseProductGroup_Info(System.Int32)">
+            <summary>
+            获取ProductGroup信息
+            </summary>
+            <param name="ID">BaseProductGroup_ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProjectRegistryController.Post_SearchMyAssign(System.Object)">
+            <summary>
+            查询项目注册列表方法（人员）我的待办 1
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProjectRegistryController.Post_SearchView(System.Object)">
+            <summary>
+            查询项目注册列表方法（其他） MyView
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProjectRegistryController.Post_SearchAllView(System.Object)">
+            <summary>
+            查询项目注册列表方法(只项查询使用)
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProjectRegistryController.Post_AllView(System.Object)">
+            <summary>
+            PM Coc查询接口
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProjectRegistryController.Post_ProjectExcelOutput(System.Object)">
+            <summary>
+            导出项目注册myview
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProjectRegistryController.Get_RegisteredProject_Delete(System.String)">
+            <summary>
+            删除方法
+            </summary>
+            <param name="Formid">formid</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProjectRegistryController.Get_RegisteredProjectDetail(System.String,System.String,System.Int32)">
+            <summary>
+            获取项目注册详细信息
+            </summary>
+            <param name="ID">eg:1</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProjectRegistryController.Post_GetProjectData(System.Object)">
+            <summary>
+            模糊搜索项目注册信息
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProjectRegistryController.Post_SaveRegisteredProject(System.Object)">
+            <summary>
+            项目注册保存
+            </summary>
+            <param name="projectRegistry"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProjectRegistryController.Post_SubmitRegisteredProject(System.Object)">
+            <summary>
+            项目注册流程提交
+            </summary>
+            <param name="projectRegistry"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProjectRegistryController.Post_ApprovalRegisteredProject(System.Object)">
+            <summary>
+            项目注册流程审批
+            </summary>
+            <param name="projectRegistry"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProjectRegistryController.Post_RPEditLogdata(System.Object)">
+            <summary>
+            获取历史修改信息
+            </summary>
+            <param name="changeLog"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProjectRegistryController.Get_ChangeLogExcelOutput(System.Int32,System.String)">
+            <summary>
+            历史修改信息导出
+            </summary>
+            <param name="Project_NO"></param>
+            <param name="Modify_Element"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProjectRegistryController.Post_CheckEndUserData(System.Object)">
+            <summary>
+            检查最终用户编号
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProjectRegistryController.Post_CheckSoldToData(System.Object)">
+            <summary>
+            检查分销商编号
+            </summary>
+            <param name="Customer_NO"></param>
+            <param name="Company_Name_En"></param>
+            <param name="Company_Name_Cn"></param>
+            <param name="recordNo">取多少条</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProjectRegistryController.Post_DIBasicInfo(System.Object)">
+            <summary>
+            获得DI信息
+            </summary>
+            <param name="DI_Name_Cn"></param>
+            <param name="recordNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProjectRegistryController.Post_PabListData(System.Object)">
+            <summary>
+            获得Pab信息
+            </summary>
+            <param name="PAB_Name_CN"></param>
+            <param name="recordNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProjectRegistryController.Get_PabInfo(System.Object)">
+            <summary>
+            精确匹配获得Pab信息
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProjectRegistryController.Get_Province">
+            <summary>
+            获得省份信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProjectRegistryController.Get_City(System.String)">
+            <summary>
+            获得城市信息
+            </summary>
+            <param name="Province"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProjectRegistryController.Get_IsSameRegion(System.String,System.String)">
+            <summary>
+            是否跨区销售
+            </summary>
+            <param name="city_code"></param>
+            <param name="office_code">办事处的编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProjectRegistryController.Get_QueryRegionListData(System.String)">
+            <summary>
+            查询条件 获取可以看到的记录中的区域信息
+            </summary>
+            <param name="Type">0 我的待办 1 myview</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProjectRegistryController.Get_QueryMainOfficeListData(System.String)">
+            <summary>
+            查询条件 获取可以看到的记录中的main office信息
+            </summary>
+            <param name="Type">0 我的待办 1 myview</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProjectRegistryController.Get_QuerySalesListData(System.String)">
+            <summary>
+            查询条件 获取可以看到的记录中的销售信息
+            </summary>
+            <param name="Type">>0 我的待办 1 myview</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ProjectRegistryController.Post_Upload_ProjectRegistry_Data">
+            <summary>
+            管理员根据模板上传项目注册信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ShowReportController.Post_ReportExcelOutput(System.Object)">
+            <summary>
+            导出报表数据
+            </summary>
+            <param name="ReportType">类型：EmReportByQty  EmReportByVol ProjectSummaryList SummaryByCaseOffer SummaryByCaseOrder SummaryByMLFBOffer SummaryByMLFBOrder</param>
+            <param name="Date_S">查询开始日期（ByCaseOrder和ByCaseOffer为crearteDate,其余为Process_End_Date）</param>
+            <param name="Date_E">查询截止日期（ByCaseOrder和ByCaseOffer为crearteDate,其余为Process_End_Date）</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.ShowReportController.Post_SearchSIPManagementList">
+            <summary>
+            获取SIP报表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.SyncDataController.Get_Synchronize(System.String,System.String,System.String)">
+            <summary>
+            同步数据
+            </summary>
+            <param name="syncType">同步类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.TransferManagementController.Post_TransferManagementUp(System.Object)">
+            <summary>
+            更新申请者
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.UserController.Post_GetBuRoleList">
+            <summary>
+            获取所有角色信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.UserController.Post_Roles_Delete(System.String)">
+            <summary>
+            角色批量删除方法
+            </summary>
+            <param name="roleIDs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.UserController.Get_Role_Info(System.Int32)">
+            <summary>
+            获取单个角色信息
+            </summary>
+            <param name="Role_ID">角色ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.UserController.Get_AllMemus(System.String)">
+            <summary>
+            获取菜单列表
+            </summary>
+            <param name="Is_Valid">1有效 0 无效 2 所有数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.UserController.Get_UserMenuInfo">
+            <summary>
+            获取当前用户的菜单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.UserController.Get_ValidUsers(System.Int32)">
+            <summary>
+            获取单个角色下的用户信息
+            </summary>
+            <param name="Role_ID">0为当前用户组织对应的人员；实际值为对应角色下的用户</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.UserController.Get_ValidUsersNew(System.Int32)">
+            <summary>
+            获取单个角色下的用户信息
+            </summary>
+            <param name="Role_ID">0为当前用户组织对应的人员；实际值为对应角色下的用户</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.UserController.Get_CurrentUserRoleList(System.String)">
+            <summary>
+            获取当前用户所在组织对应的角色
+            </summary>
+            <param name="type">1下拉框 2原数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.UserController.Post_SalesListData(System.Object)">
+            <summary>
+            获取内部用户为销售信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.UserController.Get_SalesListData">
+            <summary>
+            获取内部用户为销售信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.UserController.Post_UserListData(System.Object)">
+            <summary>
+            获取内部用户信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.UserController.Get_UserListByRoleMark(System.String)">
+            <summary>
+            根据Role_Mark获取用户信息
+            </summary>
+            <param name="roleMark"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.UserController.Get_ExternalSalesList(System.String,System.String,System.String)">
+            <summary>
+            获取外部客户对应销售
+            </summary>
+            <param name="Main_Office_ID">办事处</param>
+            <param name="Ext_Login_ID">用户号</param>
+            /// <param name="Agreement_No">协议编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.UserController.Post_UserInfoExcelOutput(System.Object)">
+            <summary>
+            导出用户基本信息及对应角色
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SPR.WebAPI.Controllers.WorkFlowController">
+            <summary>
+            工作流定义
+            </summary>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.WorkFlowController.Post_SearchWorkFlowList(System.Object)">
+            <summary>
+            查询工作流列表方法
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.WorkFlowController.Get_Workflow_Delete(System.String)">
+            <summary>
+            批量删除方法
+            </summary>
+            <param name="Ids">WF_Definition_ID集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.WorkFlowController.Get_ValidWFNodeList(System.String)">
+            <summary>
+            查询流程节点方法
+            </summary>
+            <param name="WF_Category">流程名称 eg:0001</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.WorkFlowController.Get_WorkFlow_Config(System.Int32)">
+            <summary>
+            根据WF_Definition_ID查询流程
+            </summary>
+            <param name="WF_Definition_ID">流程配置表主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.WorkFlowController.Post_Save_WorkFlow(EMSPR.Model.WF_Definition)">
+            <summary>
+            保存流程配置信息
+            </summary>
+            <param name="wfDefinition">wfDefinition实体信息 WF_Definition_ID=0新增 具体值更新</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.WorkFlowController.Get_BaseSoldToList(System.Boolean)">
+            <summary>
+            获取SoldTO信息
+            </summary>
+            <param name="Is_Valid">true 有效 false无效</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.WorkFlowController.Get_PGLevelDataList(System.String)">
+            <summary>
+            获取产品组PG信息
+            </summary>
+            <param name="level">0返回PG0 1返回PG1 2返回PG2 3返回PG3</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.WorkFlowController.Get_PG0LevelChild(System.String)">
+            <summary>
+            查询PG0,返回PG1,PG2,PG3
+            </summary>
+            <param name="pg0"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.WorkFlowController.Get_PG1LevelChild(System.String,System.String)">
+            <summary>
+            查询PG0,PG1,返回PG2,PG3
+            </summary>
+            <param name="pg0"></param>
+            <param name="pg1"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.WorkFlowController.Get_PG2LevelChild(System.String,System.String,System.String)">
+            <summary>
+            查询PG0,PG1,PG2 返回PG3;
+            </summary>
+            <param name="pg0"></param>
+            <param name="pg1"></param>
+            <param name="pg2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.WorkFlowController.Get_PG3LevelChild(System.String,System.String,System.String,System.String)">
+            <summary>
+            查询PG0,PG1,PG2，PG3 返回PG4,同之前接口有差异，只能传单个值 
+            </summary>
+            <param name="pg0"></param>
+            <param name="pg1"></param>
+            <param name="pg2"></param>
+            <param name="pg3"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.WorkFlowController.Get_BranchDataList(System.String,System.String)">
+            <summary>
+            获取branche信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Controllers.WorkFlowController.Get_VBEZDataList">
+            <summary>
+            获取VBEZ
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.DOA.ProcessNextStep.Get_WF_Define(SPR.WebAPI.DOA.WF_DefineParam)">
+            <summary>
+            获取流程定义
+            </summary>
+            <param name="stepParam"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.DOA.ProcessNextStep.Get_NextStep_Define(System.Int32)">
+            <summary>
+            根据wf_defineid获取WF_Definition的步骤和审批人信息
+            </summary>
+            <param name="wf_defineid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.DOA.ProcessNextStep.Get_NextStep_Instance(System.String)">
+            <summary>
+            根据formid获取WF_Instance_Audit的步骤和审批人信息
+            </summary>
+            <param name="formid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.DOA.ProcessNextStep.OfferSetVarStr(System.String,System.Boolean,System.Data.DataTable,EMSPR.Model.Proc_Offer)">
+            <summary>
+            offer流程设置流程变量，并给人员赋值
+            </summary>
+            <param name="nowStep">当前步骤</param>
+            <param name="start">是否为申请</param>
+            <param name="dtDefine">配置的所有节点</param>
+            <param name="offer">offer实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.DOA.ProcessNextStep.OrderSetVarStr(System.String,System.Boolean,System.Data.DataTable,EMSPR.Model.Proc_Order)">
+            <summary>
+            Order流程设置流程变量，并给人员赋值
+            </summary>
+            <param name="nowStep">当前步骤</param>
+            <param name="start">是否为申请</param>
+            <param name="dtDefine">配置的所有节点</param>
+            <param name="order">Order实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.DOA.ProcessNextStep.CheckBDMApprove3VT8(System.String,System.Nullable{System.Int32})">
+            <summary>
+            是否需要SM审批
+            </summary>
+            <param name="formid"></param>
+            <param name="wfId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.DOA.ProjectNextStep.GetNextStepInfo(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            获取项目注册定义流程信息
+            </summary>
+            <param name="org1"></param>
+            <param name="org2"></param>
+            <param name="region"></param>
+            <param name="office"></param>
+            <param name="branch"></param>
+            <param name="salesCode">登陆账号</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Logic.EmailTemplate.SaveEmailNotice(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            保存邮件到邮件队列
+            </summary>
+            <param name="processName"></param>
+            <param name="incident"></param>
+            <param name="tableName"></param>
+            <param name="sendToUser"></param>
+            <param name="formid"></param>
+            <param name="message">类型：eg 提交申请，审批通过</param>
+            <param name="mailSubCategory">获取邮件主题和内容的信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Logic.EmailTemplate.EmailNoticeTable(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            直接保存EmailNotice表
+            </summary>
+            <param name="processName"></param>
+            <param name="incident"></param>
+            <param name="tableName"></param>
+            <param name="sendToUser"></param>
+            <param name="formid"></param>
+            <param name="message"></param>
+            <param name="subject"></param>
+            <param name="mailBody"></param>
+        </member>
+        <member name="M:SPR.WebAPI.Logic.UltimusClass.GetStartTaskID(System.String)">
+            <summary>
+            获取流程发起实例号
+            </summary>
+            <param name="processName">流程名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.Logic.WF_Audit.SaveWfAudit(System.String,System.String,System.String,System.String)">
+            <summary>
+            保存流程实例信息
+            </summary>
+            <param name="wf_definition_id">工作流定义id</param>
+            <param name="formid">业务表主键</param>
+            <param name="incident">实例号</param>
+            <param name="processname">流程名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.GetCurrentUserInfo.GetAuthUser">
+            <summary>
+            获取当前用户Auth_User表信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.GetCurrentUserInfo.GetAuthRoleOrg">
+            <summary>
+            获取当前用户角色信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.GetCurrentUserInfo.GetUserInfo">
+            <summary>
+            获取当前用户V_User_Info表信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.GetCurrentUserInfo.GetOriUserInfo">
+            <summary>
+            获取原来用户V_User_Info表信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SPR.WebAPI.WebApiClass.SplitWhere(System.String,System.Object)">
+            <summary>
+            生成where条件--校验逗号隔开的列信息是否有重复项
+            </summary>
+            <param name="name">校验的字段</param>
+            <param name="value">校验的值</param>
+            <returns>拼接的sql脚本</returns>
+        </member>
+        <member name="M:SPR.WebAPI.WebApiClass.SortZOption(System.String)">
+            <summary>
+            ZOption排序
+            </summary>
+            <param name="mlfb"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SPR.WebAPI.Models.OcrModel">
+            <summary>
+            orc控制器的参数
+            </summary>
+        </member>
+        <member name="P:SPR.WebAPI.Models.OcrModel.Path">
+            <summary>
+            给定pdf文档的路径
+            </summary>
+        </member>
+        <member name="T:SPR.WebAPI.Models.RequestAuthorizeAttribute">
+            <summary>
+            自定义此特性用于接口的身份验证
+            </summary>
+        </member>
+    </members>
+</doc>

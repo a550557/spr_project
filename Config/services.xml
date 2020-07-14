@@ -1,0 +1,636 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net" default-autowire="constructor">
+
+  <object name="Auth_APIService" type="EMSPR.BLL.Auth_APIService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Auth_APIDAL" />
+  </object>
+
+  <object name="Auth_AuthorizationService" type="EMSPR.BLL.Auth_AuthorizationService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Auth_AuthorizationDAL" />
+  </object>
+
+  <object name="Auth_DelegationService" type="EMSPR.BLL.Auth_DelegationService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Auth_DelegationDAL" />
+  </object>
+
+  <object name="Auth_External_User_ProfileService" type="EMSPR.BLL.Auth_External_User_ProfileService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Auth_External_User_ProfileDAL" />
+  </object>
+
+  <object name="Auth_Internal_User_ProfileService" type="EMSPR.BLL.Auth_Internal_User_ProfileService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Auth_Internal_User_ProfileDAL" />
+  </object>
+
+  <object name="Auth_MenuService" type="EMSPR.BLL.Auth_MenuService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Auth_MenuDAL" />
+  </object>
+
+  <object name="Auth_RoleService" type="EMSPR.BLL.Auth_RoleService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Auth_RoleDAL" />
+  </object>
+
+  <object name="Auth_UserService" type="EMSPR.BLL.Auth_UserService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Auth_UserDAL" />
+  </object>
+
+  <object name="Auth_User_RelationService" type="EMSPR.BLL.Auth_User_RelationService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Auth_User_RelationDAL" />
+  </object>
+
+  <object name="Base_AgreementService" type="EMSPR.BLL.Base_AgreementService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_AgreementDAL" />
+  </object>
+
+  <object name="Base_Agreement_DetailService" type="EMSPR.BLL.Base_Agreement_DetailService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_Agreement_DetailDAL" />
+  </object>
+
+  <object name="Base_BranchService" type="EMSPR.BLL.Base_BranchService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_BranchDAL" />
+  </object>
+
+  <object name="Base_Branch_CodeService" type="EMSPR.BLL.Base_Branch_CodeService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_Branch_CodeDAL" />
+  </object>
+
+  <object name="Base_CityService" type="EMSPR.BLL.Base_CityService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_CityDAL" />
+  </object>
+
+  <object name="Base_City_Main_OfficeService" type="EMSPR.BLL.Base_City_Main_OfficeService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_City_Main_OfficeDAL" />
+  </object>
+
+  <object name="Base_City_OMService" type="EMSPR.BLL.Base_City_OMService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_City_OMDAL" />
+  </object>
+
+  <object name="Base_DI_Basic_InfoService" type="EMSPR.BLL.Base_DI_Basic_InfoService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_DI_Basic_InfoDAL" />
+  </object>
+
+  <object name="Base_DictionaryService" type="EMSPR.BLL.Base_DictionaryService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_DictionaryDAL" />
+  </object>
+
+  <object name="Base_DivisionService" type="EMSPR.BLL.Base_DivisionService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_DivisionDAL" />
+  </object>
+
+  <object name="Base_End_UserService" type="EMSPR.BLL.Base_End_UserService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_End_UserDAL" />
+  </object>
+
+  <object name="Base_Gross_MarginService" type="EMSPR.BLL.Base_Gross_MarginService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_Gross_MarginDAL" />
+  </object>
+
+  <object name="Base_HolidayService" type="EMSPR.BLL.Base_HolidayService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_HolidayDAL" />
+  </object>
+
+  <object name="Base_KeyAccountService" type="EMSPR.BLL.Base_KeyAccountService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_KeyAccountDAL" />
+  </object>
+
+  <object name="Base_LoAService" type="EMSPR.BLL.Base_LoAService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_LoADAL" />
+  </object>
+
+  <object name="Base_LoA_PGService" type="EMSPR.BLL.Base_LoA_PGService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_LoA_PGDAL" />
+  </object>
+
+  <object name="Base_MailService" type="EMSPR.BLL.Base_MailService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_MailDAL" />
+  </object>
+
+  <object name="Base_Main_Office_RegionService" type="EMSPR.BLL.Base_Main_Office_RegionService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_Main_Office_RegionDAL" />
+  </object>
+
+  <object name="Base_Main_Office_Region_DGService" type="EMSPR.BLL.Base_Main_Office_Region_DGService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_Main_Office_Region_DGDAL" />
+  </object>
+
+  <object name="Base_MLFBService" type="EMSPR.BLL.Base_MLFBService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_MLFBDAL" />
+  </object>
+
+  <object name="Base_MLFB_MDService" type="EMSPR.BLL.Base_MLFB_MDService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_MLFB_MDDAL" />
+  </object>
+
+  <object name="Base_MLFB_Price_HistoryService" type="EMSPR.BLL.Base_MLFB_Price_HistoryService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_MLFB_Price_HistoryDAL" />
+  </object>
+
+  <object name="Base_MLFB_Vendor_ContactService" type="EMSPR.BLL.Base_MLFB_Vendor_ContactService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_MLFB_Vendor_ContactDAL" />
+  </object>
+
+  <object name="Base_OEM_Biz_DetailService" type="EMSPR.BLL.Base_OEM_Biz_DetailService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_OEM_Biz_DetailDAL" />
+  </object>
+
+  <object name="Base_OEM_Business_ScopeService" type="EMSPR.BLL.Base_OEM_Business_ScopeService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_OEM_Business_ScopeDAL" />
+  </object>
+
+  <object name="Base_OEM_ListService" type="EMSPR.BLL.Base_OEM_ListService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_OEM_ListDAL" />
+  </object>
+
+  <object name="Base_PAB_Basic_InfoService" type="EMSPR.BLL.Base_PAB_Basic_InfoService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_PAB_Basic_InfoDAL" />
+  </object>
+
+  <object name="Base_PG3_Gross_MarginService" type="EMSPR.BLL.Base_PG3_Gross_MarginService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_PG3_Gross_MarginDAL" />
+  </object>
+
+  <object name="Base_Product_GroupService" type="EMSPR.BLL.Base_Product_GroupService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_Product_GroupDAL" />
+  </object>
+
+  <object name="Base_ProvinceService" type="EMSPR.BLL.Base_ProvinceService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_ProvinceDAL" />
+  </object>
+
+  <object name="Base_Region_CodeService" type="EMSPR.BLL.Base_Region_CodeService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_Region_CodeDAL" />
+  </object>
+
+  <object name="Base_SGA_Quota_RecordService" type="EMSPR.BLL.Base_SGA_Quota_RecordService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_SGA_Quota_RecordDAL" />
+  </object>
+
+  <object name="Base_SM_Region_MappingService" type="EMSPR.BLL.Base_SM_Region_MappingService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_SM_Region_MappingDAL" />
+  </object>
+
+  <object name="Base_Sold_ToService" type="EMSPR.BLL.Base_Sold_ToService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_Sold_ToDAL" />
+  </object>
+
+  <object name="Base_Sold_To_ContactService" type="EMSPR.BLL.Base_Sold_To_ContactService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_Sold_To_ContactDAL" />
+  </object>
+
+  <object name="Base_Sold_To_Regional_BAService" type="EMSPR.BLL.Base_Sold_To_Regional_BAService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_Sold_To_Regional_BADAL" />
+  </object>
+
+  <object name="Base_Sold_To_SalesService" type="EMSPR.BLL.Base_Sold_To_SalesService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_Sold_To_SalesDAL" />
+  </object>
+
+  <object name="Base_Sold_To_Ship_To_MappingService" type="EMSPR.BLL.Base_Sold_To_Ship_To_MappingService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_Sold_To_Ship_To_MappingDAL" />
+  </object>
+
+  <object name="Base_Sys_ParameterService" type="EMSPR.BLL.Base_Sys_ParameterService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_Sys_ParameterDAL" />
+  </object>
+
+  <object name="Base_Transfer_HistoryService" type="EMSPR.BLL.Base_Transfer_HistoryService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_Transfer_HistoryDAL" />
+  </object>
+
+  <object name="Base_VBEZService" type="EMSPR.BLL.Base_VBEZService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_VBEZDAL" />
+  </object>
+
+  <object name="Base_View_ManagementService" type="EMSPR.BLL.Base_View_ManagementService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_View_ManagementDAL" />
+  </object>
+
+  <object name="COM_EmailNoticeService" type="EMSPR.BLL.COM_EmailNoticeService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="COM_EmailNoticeDAL" />
+  </object>
+
+  <object name="DG_Base_DistributorService" type="EMSPR.BLL.DG_Base_DistributorService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="DG_Base_DistributorDAL" />
+  </object>
+
+  <object name="DG_PG1_PG2_MappingService" type="EMSPR.BLL.DG_PG1_PG2_MappingService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="DG_PG1_PG2_MappingDAL" />
+  </object>
+
+  <object name="DG_Project_Change_LogService" type="EMSPR.BLL.DG_Project_Change_LogService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="DG_Project_Change_LogDAL" />
+  </object>
+
+  <object name="DG_Project_Product_Change_LogService" type="EMSPR.BLL.DG_Project_Product_Change_LogService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="DG_Project_Product_Change_LogDAL" />
+  </object>
+
+  <object name="dic_countryService" type="EMSPR.BLL.dic_countryService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="dic_countryDAL" />
+  </object>
+
+  <object name="FS_FileManagerService" type="EMSPR.BLL.FS_FileManagerService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="FS_FileManagerDAL" />
+  </object>
+
+  <object name="OEMService" type="EMSPR.BLL.OEMService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="OEMDAL" />
+  </object>
+
+  <object name="Proc_CommentsService" type="EMSPR.BLL.Proc_CommentsService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Proc_CommentsDAL" />
+  </object>
+
+  <object name="Proc_DG_Project_CPInfo_DTService" type="EMSPR.BLL.Proc_DG_Project_CPInfo_DTService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Proc_DG_Project_CPInfo_DTDAL" />
+  </object>
+
+  <object name="Proc_DG_Project_EPCInfo_DTService" type="EMSPR.BLL.Proc_DG_Project_EPCInfo_DTService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Proc_DG_Project_EPCInfo_DTDAL" />
+  </object>
+
+  <object name="Proc_DG_Project_PGInfo_DTService" type="EMSPR.BLL.Proc_DG_Project_PGInfo_DTService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Proc_DG_Project_PGInfo_DTDAL" />
+  </object>
+
+  <object name="Proc_DG_Project_RegistryService" type="EMSPR.BLL.Proc_DG_Project_RegistryService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Proc_DG_Project_RegistryDAL" />
+  </object>
+
+  <object name="Proc_DG_Project_Registry_DTService" type="EMSPR.BLL.Proc_DG_Project_Registry_DTService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Proc_DG_Project_Registry_DTDAL" />
+  </object>
+
+  <object name="Proc_ForecastService" type="EMSPR.BLL.Proc_ForecastService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Proc_ForecastDAL" />
+  </object>
+
+  <object name="Proc_Forecast_FrozenService" type="EMSPR.BLL.Proc_Forecast_FrozenService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Proc_Forecast_FrozenDAL" />
+  </object>
+
+  <object name="Proc_OfferService" type="EMSPR.BLL.Proc_OfferService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Proc_OfferDAL" />
+  </object>
+
+  <object name="Proc_Offer_DTService" type="EMSPR.BLL.Proc_Offer_DTService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Proc_Offer_DTDAL" />
+  </object>
+
+  <object name="Proc_Offer_WinService" type="EMSPR.BLL.Proc_Offer_WinService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Proc_Offer_WinDAL" />
+  </object>
+
+  <object name="Proc_OrderService" type="EMSPR.BLL.Proc_OrderService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Proc_OrderDAL" />
+  </object>
+
+  <object name="Proc_Order_DTService" type="EMSPR.BLL.Proc_Order_DTService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Proc_Order_DTDAL" />
+  </object>
+
+  <object name="Proc_Pre_OrderService" type="EMSPR.BLL.Proc_Pre_OrderService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Proc_Pre_OrderDAL" />
+  </object>
+
+  <object name="Proc_Pre_Order_DTService" type="EMSPR.BLL.Proc_Pre_Order_DTService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Proc_Pre_Order_DTDAL" />
+  </object>
+
+  <object name="Proc_Project_Change_LogService" type="EMSPR.BLL.Proc_Project_Change_LogService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Proc_Project_Change_LogDAL" />
+  </object>
+
+  <object name="Proc_Project_RegistryService" type="EMSPR.BLL.Proc_Project_RegistryService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Proc_Project_RegistryDAL" />
+  </object>
+
+  <object name="Proc_Project_Registry_DTService" type="EMSPR.BLL.Proc_Project_Registry_DTService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Proc_Project_Registry_DTDAL" />
+  </object>
+
+  <object name="Proc_Project_Registry_TempService" type="EMSPR.BLL.Proc_Project_Registry_TempService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Proc_Project_Registry_TempDAL" />
+  </object>
+
+  <object name="Proc_SOService" type="EMSPR.BLL.Proc_SOService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Proc_SODAL" />
+  </object>
+
+  <object name="SerialNumberService" type="EMSPR.BLL.SerialNumberService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="SerialNumberDAL" />
+  </object>
+
+  <object name="TASKSEND_FINISHService" type="EMSPR.BLL.TASKSEND_FINISHService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="TASKSEND_FINISHDAL" />
+  </object>
+
+  <object name="TASKSEND_TEMPService" type="EMSPR.BLL.TASKSEND_TEMPService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="TASKSEND_TEMPDAL" />
+  </object>
+
+  <object name="V_ApprovalHisService" type="EMSPR.BLL.V_ApprovalHisService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_ApprovalHisDAL" />
+  </object>
+
+  <object name="V_AttachmentService" type="EMSPR.BLL.V_AttachmentService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_AttachmentDAL" />
+  </object>
+
+  <object name="V_Auth_DelegationService" type="EMSPR.BLL.V_Auth_DelegationService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_Auth_DelegationDAL" />
+  </object>
+
+  <object name="V_Auth_RoleService" type="EMSPR.BLL.V_Auth_RoleService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_Auth_RoleDAL" />
+  </object>
+
+  <object name="V_Base_AgreementService" type="EMSPR.BLL.V_Base_AgreementService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_Base_AgreementDAL" />
+  </object>
+
+  <object name="V_Base_BranchService" type="EMSPR.BLL.V_Base_BranchService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_Base_BranchDAL" />
+  </object>
+
+  <object name="V_Base_City_Main_OfficeService" type="EMSPR.BLL.V_Base_City_Main_OfficeService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_Base_City_Main_OfficeDAL" />
+  </object>
+
+  <object name="V_Base_City_OMService" type="EMSPR.BLL.V_Base_City_OMService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_Base_City_OMDAL" />
+  </object>
+
+  <object name="V_Base_DI_Basic_InfoService" type="EMSPR.BLL.V_Base_DI_Basic_InfoService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_Base_DI_Basic_InfoDAL" />
+  </object>
+
+  <object name="V_Base_LoAService" type="EMSPR.BLL.V_Base_LoAService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_Base_LoADAL" />
+  </object>
+
+  <object name="V_Base_LoA_PGService" type="EMSPR.BLL.V_Base_LoA_PGService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_Base_LoA_PGDAL" />
+  </object>
+
+  <object name="V_Base_MailService" type="EMSPR.BLL.V_Base_MailService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_Base_MailDAL" />
+  </object>
+
+  <object name="V_Base_Main_Office_RegionService" type="EMSPR.BLL.V_Base_Main_Office_RegionService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_Base_Main_Office_RegionDAL" />
+  </object>
+
+  <object name="V_Base_Main_Office_Region_DGService" type="EMSPR.BLL.V_Base_Main_Office_Region_DGService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_Base_Main_Office_Region_DGDAL" />
+  </object>
+
+  <object name="V_Base_MLFB_Vendor_ContactService" type="EMSPR.BLL.V_Base_MLFB_Vendor_ContactService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_Base_MLFB_Vendor_ContactDAL" />
+  </object>
+
+  <object name="V_Base_PAB_Basic_InfoService" type="EMSPR.BLL.V_Base_PAB_Basic_InfoService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_Base_PAB_Basic_InfoDAL" />
+  </object>
+
+  <object name="V_DG_Change_LogService" type="EMSPR.BLL.V_DG_Change_LogService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_DG_Change_LogDAL" />
+  </object>
+
+  <object name="V_DG_Product_Change_LogService" type="EMSPR.BLL.V_DG_Product_Change_LogService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_DG_Product_Change_LogDAL" />
+  </object>
+
+  <object name="V_MLFBInfoService" type="EMSPR.BLL.V_MLFBInfoService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_MLFBInfoDAL" />
+  </object>
+
+  <object name="V_Offer_TaskService" type="EMSPR.BLL.V_Offer_TaskService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_Offer_TaskDAL" />
+  </object>
+
+  <object name="V_Offer_WorkFlowService" type="EMSPR.BLL.V_Offer_WorkFlowService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_Offer_WorkFlowDAL" />
+  </object>
+
+  <object name="V_Order_TaskService" type="EMSPR.BLL.V_Order_TaskService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_Order_TaskDAL" />
+  </object>
+
+  <object name="V_Order_WorkFlowService" type="EMSPR.BLL.V_Order_WorkFlowService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_Order_WorkFlowDAL" />
+  </object>
+
+  <object name="V_Proc_Forecast_QtyService" type="EMSPR.BLL.V_Proc_Forecast_QtyService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_Proc_Forecast_QtyDAL" />
+  </object>
+
+  <object name="V_Proc_Forecast_VolService" type="EMSPR.BLL.V_Proc_Forecast_VolService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_Proc_Forecast_VolDAL" />
+  </object>
+
+  <object name="V_Project_Change_LogService" type="EMSPR.BLL.V_Project_Change_LogService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_Project_Change_LogDAL" />
+  </object>
+
+  <object name="V_Project_RegistryService" type="EMSPR.BLL.V_Project_RegistryService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_Project_RegistryDAL" />
+  </object>
+
+  <object name="V_Project_TaskService" type="EMSPR.BLL.V_Project_TaskService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_Project_TaskDAL" />
+  </object>
+
+  <object name="V_ShipTOInfoService" type="EMSPR.BLL.V_ShipTOInfoService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_ShipTOInfoDAL" />
+  </object>
+
+  <object name="V_User_InfoService" type="EMSPR.BLL.V_User_InfoService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_User_InfoDAL" />
+  </object>
+
+  <object name="WF_Approval_HisService" type="EMSPR.BLL.WF_Approval_HisService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="WF_Approval_HisDAL" />
+  </object>
+
+  <object name="WF_AttachmentService" type="EMSPR.BLL.WF_AttachmentService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="WF_AttachmentDAL" />
+  </object>
+
+  <object name="WF_DefinitionService" type="EMSPR.BLL.WF_DefinitionService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="WF_DefinitionDAL" />
+  </object>
+
+  <object name="WF_Definition_HistService" type="EMSPR.BLL.WF_Definition_HistService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="WF_Definition_HistDAL" />
+  </object>
+
+  <object name="WF_Instance_AuditService" type="EMSPR.BLL.WF_Instance_AuditService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="WF_Instance_AuditDAL" />
+  </object>
+
+  <object name="WF_Predefined_NodesService" type="EMSPR.BLL.WF_Predefined_NodesService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="WF_Predefined_NodesDAL" />
+  </object>
+
+  <object name="WF_Tech_ReviewService" type="EMSPR.BLL.WF_Tech_ReviewService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="WF_Tech_ReviewDAL" />
+  </object>
+
+  <object name="WF_Tech_Review_HisService" type="EMSPR.BLL.WF_Tech_Review_HisService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="WF_Tech_Review_HisDAL" />
+  </object>
+
+  <object name="Proc_Pab_OrderService" type="EMSPR.BLL.Proc_Pab_OrderService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Proc_Pab_OrderDAL" />
+  </object>
+
+  <object name="Proc_Pab_Order_DTService" type="EMSPR.BLL.Proc_Pab_Order_DTService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Proc_Pab_Order_DTDAL" />
+  </object>
+
+  <object name="Proc_Pab_Product_Change_LogService" type="EMSPR.BLL.Proc_Pab_Product_Change_LogService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Proc_Pab_Product_Change_LogDAL" />
+  </object>
+
+  <object name="V_Pab_Product_Change_LogService" type="EMSPR.BLL.V_Pab_Product_Change_LogService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="V_Pab_Product_Change_LogDAL" />
+  </object>
+  <object name="Proc_Pab_Ship_ReceiveService" type="EMSPR.BLL.Proc_Pab_Ship_ReceiveService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Proc_Pab_Ship_ReceiveDAL" />
+  </object>
+  <object name="Proc_Pab_BathOrderService" type="EMSPR.BLL.Proc_Pab_BathOrderService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Proc_Pab_BathOrderDAL" />
+  </object>
+  <object name="Base_PGListService" type="EMSPR.BLL.Base_PGListService, EMSPR.BLL" singleton="false" >
+    <property name="DbSession" ref="DbSession" />
+    <property name="CurrentDal" ref="Base_PGListDAL" />
+  </object>
+</objects>
+

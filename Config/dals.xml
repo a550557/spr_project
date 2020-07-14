@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net" default-autowire="constructor">
+  <object name="DbSession" type="EMSPR.DALFactory.DbSessionFactory, EMSPR.DALFactory" singleton="false"  factory-method="GetCurrentDbSession">
+  </object>
+
+  <object name="Auth_APIDAL" type="EMSPR.EFDAL.Auth_APIDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Auth_AuthorizationDAL" type="EMSPR.EFDAL.Auth_AuthorizationDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Auth_DelegationDAL" type="EMSPR.EFDAL.Auth_DelegationDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Auth_External_User_ProfileDAL" type="EMSPR.EFDAL.Auth_External_User_ProfileDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Auth_Internal_User_ProfileDAL" type="EMSPR.EFDAL.Auth_Internal_User_ProfileDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Auth_MenuDAL" type="EMSPR.EFDAL.Auth_MenuDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Auth_RoleDAL" type="EMSPR.EFDAL.Auth_RoleDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Auth_UserDAL" type="EMSPR.EFDAL.Auth_UserDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Auth_User_RelationDAL" type="EMSPR.EFDAL.Auth_User_RelationDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_AgreementDAL" type="EMSPR.EFDAL.Base_AgreementDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_Agreement_DetailDAL" type="EMSPR.EFDAL.Base_Agreement_DetailDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_BranchDAL" type="EMSPR.EFDAL.Base_BranchDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_Branch_CodeDAL" type="EMSPR.EFDAL.Base_Branch_CodeDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_CityDAL" type="EMSPR.EFDAL.Base_CityDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_City_Main_OfficeDAL" type="EMSPR.EFDAL.Base_City_Main_OfficeDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_City_OMDAL" type="EMSPR.EFDAL.Base_City_OMDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_DI_Basic_InfoDAL" type="EMSPR.EFDAL.Base_DI_Basic_InfoDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_DictionaryDAL" type="EMSPR.EFDAL.Base_DictionaryDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_DivisionDAL" type="EMSPR.EFDAL.Base_DivisionDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_End_UserDAL" type="EMSPR.EFDAL.Base_End_UserDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_Gross_MarginDAL" type="EMSPR.EFDAL.Base_Gross_MarginDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_HolidayDAL" type="EMSPR.EFDAL.Base_HolidayDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_KeyAccountDAL" type="EMSPR.EFDAL.Base_KeyAccountDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_LoADAL" type="EMSPR.EFDAL.Base_LoADAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_LoA_PGDAL" type="EMSPR.EFDAL.Base_LoA_PGDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_MailDAL" type="EMSPR.EFDAL.Base_MailDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_Main_Office_RegionDAL" type="EMSPR.EFDAL.Base_Main_Office_RegionDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_Main_Office_Region_DGDAL" type="EMSPR.EFDAL.Base_Main_Office_Region_DGDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_MLFBDAL" type="EMSPR.EFDAL.Base_MLFBDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_MLFB_MDDAL" type="EMSPR.EFDAL.Base_MLFB_MDDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_MLFB_Price_HistoryDAL" type="EMSPR.EFDAL.Base_MLFB_Price_HistoryDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_MLFB_Vendor_ContactDAL" type="EMSPR.EFDAL.Base_MLFB_Vendor_ContactDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_OEM_Biz_DetailDAL" type="EMSPR.EFDAL.Base_OEM_Biz_DetailDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_OEM_Business_ScopeDAL" type="EMSPR.EFDAL.Base_OEM_Business_ScopeDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_OEM_ListDAL" type="EMSPR.EFDAL.Base_OEM_ListDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_PAB_Basic_InfoDAL" type="EMSPR.EFDAL.Base_PAB_Basic_InfoDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_PG3_Gross_MarginDAL" type="EMSPR.EFDAL.Base_PG3_Gross_MarginDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_Product_GroupDAL" type="EMSPR.EFDAL.Base_Product_GroupDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_ProvinceDAL" type="EMSPR.EFDAL.Base_ProvinceDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_Region_CodeDAL" type="EMSPR.EFDAL.Base_Region_CodeDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_SGA_Quota_RecordDAL" type="EMSPR.EFDAL.Base_SGA_Quota_RecordDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_SM_Region_MappingDAL" type="EMSPR.EFDAL.Base_SM_Region_MappingDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_Sold_ToDAL" type="EMSPR.EFDAL.Base_Sold_ToDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_Sold_To_ContactDAL" type="EMSPR.EFDAL.Base_Sold_To_ContactDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_Sold_To_Regional_BADAL" type="EMSPR.EFDAL.Base_Sold_To_Regional_BADAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_Sold_To_SalesDAL" type="EMSPR.EFDAL.Base_Sold_To_SalesDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_Sold_To_Ship_To_MappingDAL" type="EMSPR.EFDAL.Base_Sold_To_Ship_To_MappingDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_Sys_ParameterDAL" type="EMSPR.EFDAL.Base_Sys_ParameterDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_Transfer_HistoryDAL" type="EMSPR.EFDAL.Base_Transfer_HistoryDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_VBEZDAL" type="EMSPR.EFDAL.Base_VBEZDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Base_View_ManagementDAL" type="EMSPR.EFDAL.Base_View_ManagementDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="COM_EmailNoticeDAL" type="EMSPR.EFDAL.COM_EmailNoticeDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="DG_Base_DistributorDAL" type="EMSPR.EFDAL.DG_Base_DistributorDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="DG_PG1_PG2_MappingDAL" type="EMSPR.EFDAL.DG_PG1_PG2_MappingDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="DG_Project_Change_LogDAL" type="EMSPR.EFDAL.DG_Project_Change_LogDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="DG_Project_Product_Change_LogDAL" type="EMSPR.EFDAL.DG_Project_Product_Change_LogDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="dic_countryDAL" type="EMSPR.EFDAL.dic_countryDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="FS_FileManagerDAL" type="EMSPR.EFDAL.FS_FileManagerDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="OEMDAL" type="EMSPR.EFDAL.OEMDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Proc_CommentsDAL" type="EMSPR.EFDAL.Proc_CommentsDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Proc_DG_Project_CPInfo_DTDAL" type="EMSPR.EFDAL.Proc_DG_Project_CPInfo_DTDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Proc_DG_Project_EPCInfo_DTDAL" type="EMSPR.EFDAL.Proc_DG_Project_EPCInfo_DTDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Proc_DG_Project_PGInfo_DTDAL" type="EMSPR.EFDAL.Proc_DG_Project_PGInfo_DTDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Proc_DG_Project_RegistryDAL" type="EMSPR.EFDAL.Proc_DG_Project_RegistryDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Proc_DG_Project_Registry_DTDAL" type="EMSPR.EFDAL.Proc_DG_Project_Registry_DTDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Proc_ForecastDAL" type="EMSPR.EFDAL.Proc_ForecastDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Proc_Forecast_FrozenDAL" type="EMSPR.EFDAL.Proc_Forecast_FrozenDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Proc_OfferDAL" type="EMSPR.EFDAL.Proc_OfferDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Proc_Offer_DTDAL" type="EMSPR.EFDAL.Proc_Offer_DTDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Proc_Offer_WinDAL" type="EMSPR.EFDAL.Proc_Offer_WinDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Proc_OrderDAL" type="EMSPR.EFDAL.Proc_OrderDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Proc_Order_DTDAL" type="EMSPR.EFDAL.Proc_Order_DTDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Proc_Pre_OrderDAL" type="EMSPR.EFDAL.Proc_Pre_OrderDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Proc_Pre_Order_DTDAL" type="EMSPR.EFDAL.Proc_Pre_Order_DTDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Proc_Project_Change_LogDAL" type="EMSPR.EFDAL.Proc_Project_Change_LogDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Proc_Project_RegistryDAL" type="EMSPR.EFDAL.Proc_Project_RegistryDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Proc_Project_Registry_DTDAL" type="EMSPR.EFDAL.Proc_Project_Registry_DTDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Proc_Project_Registry_TempDAL" type="EMSPR.EFDAL.Proc_Project_Registry_TempDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Proc_SODAL" type="EMSPR.EFDAL.Proc_SODAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="SerialNumberDAL" type="EMSPR.EFDAL.SerialNumberDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="TASKSEND_FINISHDAL" type="EMSPR.EFDAL.TASKSEND_FINISHDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="TASKSEND_TEMPDAL" type="EMSPR.EFDAL.TASKSEND_TEMPDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="V_ApprovalHisDAL" type="EMSPR.EFDAL.V_ApprovalHisDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="V_AttachmentDAL" type="EMSPR.EFDAL.V_AttachmentDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="V_Auth_DelegationDAL" type="EMSPR.EFDAL.V_Auth_DelegationDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="V_Auth_RoleDAL" type="EMSPR.EFDAL.V_Auth_RoleDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="V_Base_AgreementDAL" type="EMSPR.EFDAL.V_Base_AgreementDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="V_Base_BranchDAL" type="EMSPR.EFDAL.V_Base_BranchDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="V_Base_City_Main_OfficeDAL" type="EMSPR.EFDAL.V_Base_City_Main_OfficeDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="V_Base_City_OMDAL" type="EMSPR.EFDAL.V_Base_City_OMDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="V_Base_DI_Basic_InfoDAL" type="EMSPR.EFDAL.V_Base_DI_Basic_InfoDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="V_Base_LoADAL" type="EMSPR.EFDAL.V_Base_LoADAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="V_Base_LoA_PGDAL" type="EMSPR.EFDAL.V_Base_LoA_PGDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="V_Base_MailDAL" type="EMSPR.EFDAL.V_Base_MailDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="V_Base_Main_Office_RegionDAL" type="EMSPR.EFDAL.V_Base_Main_Office_RegionDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="V_Base_Main_Office_Region_DGDAL" type="EMSPR.EFDAL.V_Base_Main_Office_Region_DGDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="V_Base_MLFB_Vendor_ContactDAL" type="EMSPR.EFDAL.V_Base_MLFB_Vendor_ContactDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="V_Base_PAB_Basic_InfoDAL" type="EMSPR.EFDAL.V_Base_PAB_Basic_InfoDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="V_DG_Change_LogDAL" type="EMSPR.EFDAL.V_DG_Change_LogDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="V_DG_Product_Change_LogDAL" type="EMSPR.EFDAL.V_DG_Product_Change_LogDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="V_MLFBInfoDAL" type="EMSPR.EFDAL.V_MLFBInfoDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="V_Offer_TaskDAL" type="EMSPR.EFDAL.V_Offer_TaskDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="V_Offer_WorkFlowDAL" type="EMSPR.EFDAL.V_Offer_WorkFlowDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="V_Order_TaskDAL" type="EMSPR.EFDAL.V_Order_TaskDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="V_Order_WorkFlowDAL" type="EMSPR.EFDAL.V_Order_WorkFlowDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="V_Proc_Forecast_QtyDAL" type="EMSPR.EFDAL.V_Proc_Forecast_QtyDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="V_Proc_Forecast_VolDAL" type="EMSPR.EFDAL.V_Proc_Forecast_VolDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="V_Project_Change_LogDAL" type="EMSPR.EFDAL.V_Project_Change_LogDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="V_Project_RegistryDAL" type="EMSPR.EFDAL.V_Project_RegistryDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="V_Project_TaskDAL" type="EMSPR.EFDAL.V_Project_TaskDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="V_ShipTOInfoDAL" type="EMSPR.EFDAL.V_ShipTOInfoDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="V_User_InfoDAL" type="EMSPR.EFDAL.V_User_InfoDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="WF_Approval_HisDAL" type="EMSPR.EFDAL.WF_Approval_HisDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="WF_AttachmentDAL" type="EMSPR.EFDAL.WF_AttachmentDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="WF_DefinitionDAL" type="EMSPR.EFDAL.WF_DefinitionDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="WF_Definition_HistDAL" type="EMSPR.EFDAL.WF_Definition_HistDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="WF_Instance_AuditDAL" type="EMSPR.EFDAL.WF_Instance_AuditDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="WF_Predefined_NodesDAL" type="EMSPR.EFDAL.WF_Predefined_NodesDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="WF_Tech_ReviewDAL" type="EMSPR.EFDAL.WF_Tech_ReviewDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="WF_Tech_Review_HisDAL" type="EMSPR.EFDAL.WF_Tech_Review_HisDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Proc_Pab_OrderDAL" type="EMSPR.EFDAL.Proc_Pab_OrderDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Proc_Pab_Order_DTDAL" type="EMSPR.EFDAL.Proc_Pab_Order_DTDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Proc_Pab_Product_Change_LogDAL" type="EMSPR.EFDAL.Proc_Pab_Product_Change_LogDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+  
+  <object name="V_Pab_Product_Change_LogDAL" type="EMSPR.EFDAL.V_Pab_Product_Change_LogDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+
+  <object name="Proc_Pab_Ship_ReceiveDAL" type="EMSPR.EFDAL.Proc_Pab_Ship_ReceiveDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+  <object name="Proc_Pab_BathOrderDAL" type="EMSPR.EFDAL.Proc_Pab_BathOrderDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+  <object name="Base_PGListDAL" type="EMSPR.EFDAL.Base_PGListDAL, EMSPR.EFDAL" singleton="false" >
+  </object>
+</objects>

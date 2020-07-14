@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net" default-autowire="constructor">
+
+  <object type="SPR.WebAPI.Controllers.LoginController, SPR.WebAPI" singleton="false" >
+    <property name="UserService" ref="Auth_UserService" />
+    <property name="V_UserService" ref="V_User_InfoService" />
+    <property name="AuthorizationService" ref="Auth_AuthorizationService" />
+    <property name="MenuService" ref="Auth_MenuService" />
+    <property name="VAuthRoleService" ref="V_Auth_RoleService" />
+
+  </object>
+  <object type="SPR.WebAPI.Controllers.UserController, SPR.WebAPI" singleton="false" >
+    <property name="UserService" ref="Auth_UserService" />
+    <property name="V_UserService" ref="V_User_InfoService" />
+    <property name="AuthExternalUserProfileService" ref="Auth_External_User_ProfileService" />
+    <property name="AuthInternalUserProfileService" ref="Auth_Internal_User_ProfileService" />
+    <property name="AuthUserRelationService" ref="Auth_User_RelationService" />
+    <property name="AuthRoleService" ref="Auth_RoleService" />
+    <property name="VAuthRoleService" ref="V_Auth_RoleService" />
+    <property name="AuthorizationService" ref="Auth_AuthorizationService" />
+    <property name="MenuService" ref="Auth_MenuService" />
+    <property name="VbezService" ref="Base_VBEZService" />
+    <property name="BaseSoldToService" ref="Base_Sold_ToService" />
+  </object>
+  <object type="SPR.WebAPI.Controllers.DictionaryController, SPR.WebAPI" singleton="false" >
+    <property name="DictionaryService" ref="Base_DictionaryService" />
+    <property name="SoldToService" ref="Base_Sold_ToService" />
+    <property name="MainOfficeRegionService" ref="Base_Main_Office_RegionService" />
+
+  </object>
+  <object type="SPR.WebAPI.Controllers.WorkFlowController, SPR.WebAPI" singleton="false" >
+    <property name="WfDefinitionService" ref="WF_DefinitionService" />
+    <property name="WfDefinitionHistService" ref="WF_Definition_HistService" />
+    <property name="WfPredefinedNodesService" ref="WF_Predefined_NodesService" />
+    <property name="MlfbMdService" ref="Base_MLFB_MDService" />
+    <property name="BarBranchService" ref="Base_BranchService" />
+    <property name="SoldToService" ref="Base_Sold_ToService" />
+    <property name="VbezService" ref="Base_VBEZService" />
+  </object>
+  <object type="SPR.WebAPI.Controllers.ProjectRegistryController, SPR.WebAPI" singleton="false" >
+    <property name="ProcProjectRegistryService" ref="Proc_Project_RegistryService" />
+    <property name="ProjectChangeLog" ref="Proc_Project_Change_LogService" />
+    <property name="VProjectChangeLog" ref="V_Project_Change_LogService" />
+    <property name="BaseEndUserService" ref="Base_End_UserService" />
+    <property name="BaseSoldToService" ref="Base_Sold_ToService" />
+    <property name="BASE_DI_BASIC_INFOService" ref="Base_DI_Basic_InfoService" />
+    <property name="Base_PAB_Basic_InfoService" ref="Base_PAB_Basic_InfoService" />
+    <property name="Base_ProvinceService" ref="Base_ProvinceService" />
+    <property name="Base_CityService" ref="Base_CityService" />
+    <property name="Base_BranchService" ref="Base_BranchService" />
+    <property name="VProjectRegistryService" ref="V_Project_RegistryService" />
+    <property name="TasksendTempService" ref="TASKSEND_TEMPService" />
+    <property name="ProjectTaskService" ref="V_Project_TaskService" />
+    <property name="ProjectRegistryDtService" ref="Proc_Project_Registry_DTService" />
+    <property name="ProcProjectRegistryTempService" ref="Proc_Project_Registry_TempService" />
+    <property name="CityOmService" ref="Base_City_OMService" />
+    <property name="EmailNoticeService" ref="COM_EmailNoticeService" />
+    <property name="AuthInternalUserProfileService" ref="Auth_Internal_User_ProfileService" />
+    <property name="VBaseCityMainOfficeService" ref="V_Base_City_Main_OfficeService" />
+    <property name="DictionaryService" ref="Base_DictionaryService" />
+  </object>
+  <object type="SPR.WebAPI.Controllers.DivisionController, SPR.WebAPI" singleton="false" >
+    <property name="BaseDivisionService" ref="Base_DivisionService" />
+  </object>
+  <object type="SPR.WebAPI.Controllers.ProductGroupController, SPR.WebAPI" singleton="false" >
+    <property name="BaseProductGroupService" ref="Base_Product_GroupService" />
+  </object>
+  <object type="SPR.WebAPI.Controllers.FileOptController, SPR.WebAPI" singleton="false" >
+    <property name="V_UserService" ref="V_User_InfoService" />
+    <property name="FileManagerService" ref="FS_FileManagerService" />
+    <property name="AttachmentService" ref="WF_AttachmentService" />
+    <property name="VAttachmentService" ref="V_AttachmentService" />
+  </object>
+  <object type="SPR.WebAPI.Controllers.OfferController, SPR.WebAPI" singleton="false" >
+    <property name="OfferService" ref="Proc_OfferService" />
+    <property name="ProjectChangeLog" ref="Proc_Project_Change_LogService" />
+    <property name="OfferDtService" ref="Proc_Offer_DTService" />
+    <property name="OfferWinService" ref="Proc_Offer_WinService" />
+    <property name="CommentsService" ref="Proc_CommentsService" />
+    <property name="ShipToMappingService" ref="Base_Sold_To_Ship_To_MappingService" />
+    <property name="VShipToInfoService" ref="V_ShipTOInfoService" />
+    <property name="BaseOemBusinessScopeService" ref="Base_OEM_Business_ScopeService" />
+    <property name="BaseOemBizDetailService" ref="Base_OEM_Biz_DetailService" />
+    <property name="BaseBranchCodeService" ref="Base_Branch_CodeService" />
+    <property name="BaseMlfbService" ref="Base_MLFBService" />
+    <property name="BaseMlfbMdService" ref="Base_MLFB_MDService" />
+
+  </object>
+  <object type="SPR.WebAPI.Controllers.BaseMLFBController, SPR.WebAPI" singleton="false" >
+    <property name="BaseMLFBService" ref="Base_MLFBService" />
+    <property name="BaseMLFBMDService" ref="Base_MLFB_MDService" />
+    <property name="BaseMLFBVendorContactService" ref="Base_MLFB_Vendor_ContactService" />
+    <property name="DictionaryService" ref="Base_DictionaryService" />
+    <property name="VBaseMLFBVendorContactService" ref="V_Base_MLFB_Vendor_ContactService" />
+
+  </object>
+  <object type="SPR.WebAPI.Controllers.BaseCityController, SPR.WebAPI" singleton="false" >
+    <property name="BaseCityOMService" ref="Base_City_OMService" />
+    <property name="BaseCityMainOfficeService" ref="Base_City_Main_OfficeService" />
+    <property name="BaseMainOfficeRegionService" ref="Base_Main_Office_RegionService" />
+    <property name="BaseMainOfficeRegionDGService" ref="Base_Main_Office_Region_DGService" />
+    <property name="VBaseCityOMService" ref="V_Base_City_OMService" />
+    <property name="VBaseCityMainOfficeService" ref="V_Base_City_Main_OfficeService" />
+    <property name="VBaseMainOfficeRegionService" ref="V_Base_Main_Office_RegionService" />
+    <property name="VBaseMainOfficeRegionDGService" ref="V_Base_Main_Office_Region_DGService" />
+  </object>
+  <object type="SPR.WebAPI.Controllers.BaseSoldToController, SPR.WebAPI" singleton="false" >
+    <property name="BaseSoldToService" ref="Base_Sold_ToService" />
+    <property name="BaseSoldToContactService" ref="Base_Sold_To_ContactService" />
+    <property name="BaseSoldToSalesService" ref="Base_Sold_To_SalesService" />
+    <property name="BaseSoldToRegionalBAService" ref="Base_Sold_To_Regional_BAService" />
+  </object>
+  <object type="SPR.WebAPI.Controllers.BaseBranchController, SPR.WebAPI" singleton="false" >
+    <property name="BaseBranchService" ref="Base_BranchService" />
+    <property name="VBaseBranchService" ref="V_Base_BranchService" />
+  </object>
+  <object type="SPR.WebAPI.Controllers.DelegationController, SPR.WebAPI" singleton="false" >
+    <property name="AuthDelegationService" ref="Auth_DelegationService" />
+    <property name="DictionaryService" ref="Base_DictionaryService" />
+  </object>
+  <object type="SPR.WebAPI.Controllers.BaseMailController, SPR.WebAPI" singleton="false" >
+    <property name="BaseMailService" ref="Base_MailService" />
+    <property name="VBaseMailService" ref="V_Base_MailService" />
+  </object>
+  <object type="SPR.WebAPI.Controllers.BaseViewManagementController, SPR.WebAPI" singleton="false" >
+    <property name="BaseViewManagementService" ref="Base_View_ManagementService" />
+  </object>
+  <object type="SPR.WebAPI.Controllers.BaseLoAController, SPR.WebAPI" singleton="false" >
+    <property name="BaseLoAService" ref="Base_LoAService" />
+    <property name="VbaseLoAService" ref="V_Base_LoAService" />
+    <property name="DictionaryService" ref="Base_DictionaryService" />
+  </object>
+  <object type="SPR.WebAPI.Controllers.BaseLoAPGController, SPR.WebAPI" singleton="false" >
+    <property name="BaseLoAPGService" ref="Base_LoA_PGService" />
+    <property name="BasePGListService" ref="Base_PGListService" />
+  </object>
+  <object type="SPR.WebAPI.Controllers.BaseEndUserController, SPR.WebAPI" singleton="false" >
+    <property name="BaseEndUserService" ref="Base_End_UserService" />
+  </object>
+  <object type="SPR.WebAPI.Controllers.BaseSoldToShipToMappingController, SPR.WebAPI" singleton="false" >
+    <property name="BaseSoldToShipToMappingService" ref="Base_Sold_To_Ship_To_MappingService" />
+    <property name="BaseSoldToService" ref="Base_Sold_ToService" />
+    <property name="Base_PAB_Basic_InfoService" ref="Base_PAB_Basic_InfoService" />
+  </object>
+  <object name="OrderController" type="SPR.WebAPI.Controllers.OrderController, SPR.WebAPI" singleton="false" >
+    <property name="OrderService" ref="Proc_OrderService" />
+    <property name="CommentsService" ref="Proc_CommentsService" />
+    <property name="OrderDtService" ref="Proc_Order_DTService" />
+    <property name="BaseAgreementService" ref="Base_AgreementService" />
+    <property name="BaseAgreementDetailService" ref="Base_Agreement_DetailService" />
+    <property name="BaseBranchCodeService" ref="Base_Branch_CodeService" />
+    <property name="BaseMlfbService" ref="Base_MLFBService" />
+    <property name="BaseMlfbMdService" ref="Base_MLFB_MDService" />
+    <property name="OfferService" ref="Proc_OfferService" />
+    <property name="OfferDtService" ref="Proc_Offer_DTService" />
+    <property name="BaseOemBusinessScopeService" ref="Base_OEM_Business_ScopeService" />
+    <property name="BaseOemBizDetailService" ref="Base_OEM_Biz_DetailService" />
+    <property name="OrderVCBController" ref="OrderVCBController" />
+    <property name="PabOrderController" ref="PabOrderController" />
+    <property name="ProcProjectRegistryService" ref="Proc_Project_RegistryService" />
+    
+  </object>
+  <object name="OrderVCBController" type="SPR.WebAPI.Controllers.OrderVCBController, SPR.WebAPI" singleton="false" >
+    <property name="OrderService" ref="Proc_OrderService" />
+    <property name="OrderDtService" ref="Proc_Order_DTService" />
+    <property name="BaseMlfbService" ref="Base_MLFBService" />
+    <property name="BaseMlfbMdService" ref="Base_MLFB_MDService" />
+    <property name="WFTechReviewService" ref="WF_Tech_ReviewService" />
+    <property name="WFTechReviewHisService" ref="WF_Tech_Review_HisService" />
+    <property name="EmailNoticeService" ref="COM_EmailNoticeService" />
+  </object>
+  <object type="SPR.WebAPI.Controllers.BaseAgreementController, SPR.WebAPI" singleton="false" >
+    <property name="BaseAgreementService" ref="Base_AgreementService" />
+    <property name="BaseAgreementDetailService" ref="Base_Agreement_DetailService" />
+    <property name="VBaseAgreementService" ref="V_Base_AgreementService" />
+  </object>
+  <object type="SPR.WebAPI.Controllers.BaseKeyAccountController, SPR.WebAPI" singleton="false" >
+    <property name="BaseKeyAccountService" ref="Base_KeyAccountService" />
+  </object>
+  <object type="SPR.WebAPI.Controllers.BaseSGAQuotaRecordController, SPR.WebAPI" singleton="false" >
+    <property name="BaseSGAQuotaRecordService" ref="Base_SGA_Quota_RecordService" />
+  </object>
+  <object type="SPR.WebAPI.Controllers.BaseSysParameterController, SPR.WebAPI" singleton="false" >
+    <property name="BaseSysParameterService" ref="Base_Sys_ParameterService" />
+  </object>
+  <object type="SPR.WebAPI.Controllers.BaseAutoController, SPR.WebAPI" singleton="false" >
+    <property name="BaseDIBasicInfoService" ref="Base_DI_Basic_InfoService" />
+    <property name="BasePABBasicInfoService" ref="Base_PAB_Basic_InfoService" />
+    <property name="BaseOEMListService" ref="Base_OEM_ListService" />
+    <property name="BaseRegionCodeService" ref="Base_Region_CodeService" />
+    <property name="BaseBranchCodeService" ref="Base_Branch_CodeService" />
+    <property name="VBaseDIBasicInfoService" ref="V_Base_DI_Basic_InfoService" />
+    <property name="VBasePABBasicInfoService" ref="V_Base_PAB_Basic_InfoService" />
+    <property name="CityService" ref="Base_CityService" />
+    <property name="DictionaryService" ref="Base_DictionaryService" />
+    <property name="ProvinceService" ref="Base_ProvinceService" />
+    <property name="UserProfileService" ref="Auth_Internal_User_ProfileService" />
+    <property name="BranchService" ref="Base_BranchService" />
+
+  </object>
+  <object type="SPR.WebAPI.Controllers.PreOrderController, SPR.WebAPI" singleton="false" >
+    <property name="PreOrderService" ref="Proc_Pre_OrderService" />
+    <property name="PreOrderDtService" ref="Proc_Pre_Order_DTService" />
+  </object>
+  <object type="SPR.WebAPI.Controllers.ForecastController, SPR.WebAPI" singleton="false" >
+    <property name="ForecastService" ref="Proc_ForecastService" />
+    <property name="ForecastFrozenService" ref="Proc_Forecast_FrozenService" />
+    <property name="VProcForecastQtyService" ref="V_Proc_Forecast_QtyService" />
+    <property name="VProcForecastVolService" ref="V_Proc_Forecast_VolService" />
+    <property name="BaseHolidayService" ref="Base_HolidayService" />
+  </object>
+
+  <object type="SPR.WebAPI.Controllers.ProcSOController, SPR.WebAPI" singleton="false" >
+    <property name="ProcSoService" ref="Proc_SOService" />
+  </object>
+
+  <object type="SPR.WebAPI.Controllers.DGRegistryController, SPR.WebAPI" singleton="false" >
+    <property name="ProcDgProjectRegistryService" ref="Proc_DG_Project_RegistryService" />
+    <property name="CpInfoDtService" ref="Proc_DG_Project_CPInfo_DTService" />
+    <property name="EpcInfoDtService" ref="Proc_DG_Project_EPCInfo_DTService" />
+    <property name="PgInfoDtService" ref="Proc_DG_Project_PGInfo_DTService" />
+    <property name="InfoDtService" ref="Proc_DG_Project_Registry_DTService" />
+    <property name="ProjectChangeLogService" ref="DG_Project_Change_LogService" />
+    <property name="VDgChangeLogService" ref="V_DG_Change_LogService" />
+    <property name="VDgProductChangeLogService" ref="V_DG_Product_Change_LogService" />
+    <property name="DgPg1Pg2MappingService" ref="DG_PG1_PG2_MappingService" />
+    <property name="DicCountryService" ref="dic_countryService" />
+    <property name="DictionaryService" ref="Base_DictionaryService" />
+    <property name="EmailNoticeService" ref="COM_EmailNoticeService" />
+  </object>
+  <object name="PabOrderController" type="SPR.WebAPI.Controllers.PabOrderController, SPR.WebAPI" singleton="false" >
+    <property name="PabOrderService" ref="Proc_Pab_OrderService" />
+    <property name="PabOrderDtService" ref="Proc_Pab_Order_DTService" />
+    <property name="AttachmentService" ref="WF_AttachmentService" />
+    <property name="FileManagerService" ref="FS_FileManagerService" />
+    <property name="BaseAgreementService" ref="Base_AgreementService" />
+    <property name="DictionaryService" ref="Base_DictionaryService" />
+    <property name="PabProductChangeLogService" ref="Proc_Pab_Product_Change_LogService" />
+    <property name="VPabProductChangeLogService" ref="V_Pab_Product_Change_LogService" />
+    <property name="ProcPabShipReceiveService" ref="Proc_Pab_Ship_ReceiveService" />
+    <property name="ProcPabBathOrderService" ref="Proc_Pab_BathOrderService" />
+    <property name="V_UserService" ref="V_User_InfoService" />
+  </object>
+</objects>
+
